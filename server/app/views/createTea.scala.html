@@ -1,0 +1,131 @@
+@(form: Form[forms.Forms.CreateTeaData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+
+@main("お茶の新規登録") {
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h1>お茶の新規登録</h1>
+
+        @request.flash.get("success").map { message =>
+          <div class="alert alert-success">@message</div>
+        }
+
+        @request.flash.get("error").map { message =>
+          <div class="alert alert-danger">@message</div>
+        }
+
+        @helper.form(routes.HomeController.doCreateTea(), Symbol("class") -> "mt-4") {
+          @helper.CSRF.formField
+
+          <div class="form-group">
+            @helper.inputText(
+              form("name"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "名前",
+              Symbol("_help") -> "お茶の名前を入力してください"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("teaType"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "種類",
+              Symbol("_help") -> "お茶の種類を入力してください"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("origin"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "産地",
+              Symbol("_help") -> "お茶の産地を入力してください"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputDate(
+              form("purchaseDate"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "購入日",
+              Symbol("_help") -> "お茶の購入日を選択してください"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.select(
+              form("status"),
+              options = Seq(
+                "未開封" -> "未開封",
+                "開封済み" -> "開封済み",
+                "飲み終わり" -> "飲み終わり"
+              ),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "状態",
+              Symbol("_help") -> "お茶の現在の状態を選択してください"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.textarea(
+              form("description"),
+              Symbol("class") -> "form-control",
+              Symbol("rows") -> 3,
+              Symbol("_label") -> "説明",
+              Symbol("_help") -> "お茶についての説明を入力してください（任意）"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("price"),
+              Symbol("class") -> "form-control",
+              Symbol("type") -> "number",
+              Symbol("_label") -> "価格",
+              Symbol("_help") -> "お茶の価格を入力してください（任意）"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("quantity"),
+              Symbol("class") -> "form-control",
+              Symbol("type") -> "number",
+              Symbol("step") -> "0.1",
+              Symbol("_label") -> "数量",
+              Symbol("_help") -> "お茶の数量を入力してください（任意）"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("unit"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "単位",
+              Symbol("_help") -> "数量の単位を入力してください（任意）"
+            )
+          </div>
+
+          <div class="form-group">
+            @helper.inputText(
+              form("imageUrl"),
+              Symbol("class") -> "form-control",
+              Symbol("_label") -> "画像URL",
+              Symbol("_help") -> "お茶の画像URLを入力してください（任意）"
+            )
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-save"></i> 保存
+            </button>
+            <a href="@routes.HomeController.dashboard()" class="btn btn-secondary">
+              <i class="fas fa-times"></i> キャンセル
+            </a>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+} 

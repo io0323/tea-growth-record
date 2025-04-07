@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/teas/route": "app/api/teas/route.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/teas/page": "app/teas/page.js"
+}

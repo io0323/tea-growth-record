@@ -1,0 +1,622 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.5.8 (Homebrew Java 11.0.26)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 491.807875ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 64.632042ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 1.235333ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 5.644792ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 11.325209 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project tea-growth-record-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(tea-growth-record-build) took 32.2495ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id tea-growth-record-build, base: /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project, plugins: List(<none>))) took 62.337083ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project, returning: (tea-growth-record-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 287.63875ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 5.991916ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project/, ...) took 365.515833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 846.067916ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 9.413625ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 98.530791ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 6.768458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 772.799375ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 144.449833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.848166ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 3875.34025ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.003125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.846917ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.play.sbt.enhancer.PlayEnhancer),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(com.typesafe.play.sbt.enhancer.PlayEnhancer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayService,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.play.sbt.enhancer.PlayEnhancer,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,play.sbt.PlayLogback,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,sbt.plugins.MiniDependencyTreePlugin,com.typesafe.sbt.jse.SbtJsEngine,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.coffeescript.SbtCoffeeScript,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 50.5365 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 111.815125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record, plugins: List(play.sbt.PlayScala))) took 166.100833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 284.769917ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 3.537584ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/, ...) took 4165.326875ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 4180.935334ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.645458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 32.589458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 3.424375ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 281.621208ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 84.556541ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.004ms[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  __              __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  \ \     ____   / /____ _ __  __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   \ \   / __ \ / // __ `// / / /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   / /  / /_/ // // /_/ // /_/ /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  /_/  / .___//_/ \__,_/ \__, /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m      /_/               /____/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion 2.8.19 running Java 11.0.26[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[1mPlay is run entirely by the community. Please consider contributing and/or donating:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.playframework.com/sponsors[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run 9002, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 42 Scala sources and 1 Java source to /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/TeaStatus.scala:8:8: TeaStatus is already defined as object TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0mobject TeaStatus extends Enumeration {[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/TeaType.scala:8:8: TeaType is already defined as object TeaType[0m
+[0m[[0m[31merror[0m] [0m[0mobject TeaType extends Enumeration {[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 42 Scala sources and 1 Java source to /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:15:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:6:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:70:21: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth method create in class UserService of type (data: models.Forms.RegisterData): scala.concurrent.Future[Long][0m
+[0m[[0m[31merror[0m] [0m[0mand  method create in class UserService of type (data: models.Forms.RegisterData): scala.concurrent.Future[models.User][0m
+[0m[[0m[31merror[0m] [0m[0mmatch argument types (models.Forms.RegisterData)[0m
+[0m[[0m[31merror[0m] [0m[0m        userService.create(registerData).map { _ =>[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:103:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:103:42: missing argument list for method unapply in object CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:128:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:128:42: missing argument list for method unapply in object UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/TeaController.scala:163:53: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.Forms.PasswordUpdateData[0m
+[0m[[0m[31merror[0m] [0m[0m            userService.updatePassword(userId, data.newPassword).map { _ =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:9:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:13:8: object BaseColumnType is not a member of package slick.lifted[0m
+[0m[[0m[31merror[0m] [0m[0mimport slick.lifted.{ProvenShape, BaseColumnType}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:60:26: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:61:25: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:108:14: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    teaType: TeaType,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:109:13: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    status: TeaStatus,[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:119:37: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def tupled = (t: (Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:119:46: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def tupled = (t: (Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:122:52: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def unapply(r: TeasRow): Option[(Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:122:61: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def unapply(r: TeasRow): Option[(Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:144:17: _ must follow method; cannot follow models.User.apply.type[0m
+[0m[[0m[31merror[0m] [0m[0m    ) <> ((User.apply _).tupled, User.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:50:34: No Json formatter found for type java.math.BigDecimal. Try to implement an implicit Format for this type.[0m
+[0m[[0m[31merror[0m] [0m[0m    (__ \ "price").formatNullable[JBigDecimal] and[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:55:9: missing argument list for method apply in object Tea[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_,_,_,_,_,_,_,_,_,_,_)` instead of `apply`.[0m
+[0m[[0m[31merror[0m] [0m[0m  )(Tea.apply, unlift(Tea.unapply))[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:111:29: overloaded method unapply needs result type[0m
+[0m[[0m[31merror[0m] [0m[0m  def unapply = Tea.unapply _[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:31:35: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  def createdAt = column[DateTime]("created_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:32:35: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  def updatedAt = column[DateTime]("updated_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:33:48: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaTypeMapper: BaseColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:38:50: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaStatusMapper: BaseColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:24:26: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:25:25: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:33:81: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaTypeMapper: BaseColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:38:85: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaStatusMapper: BaseColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:27:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(row.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:50:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : models.Tables.UsersRow[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.User[0m
+[0m[[0m[31merror[0m] [0m[0m    db.run((Tables.Users returning Tables.Users.map(_.id)) += row).map { id =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:67:52: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : models.Tables.UsersRow[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.Tables.UsersTable#TableElementType[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  models.User[0m
+[0m[[0m[31merror[0m] [0m[0m    db.run(Tables.Users.filter(_.id === id).update(row))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:84:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:102:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/TeaService.scala:57:19: value findByIdAndUserId is not a member of repositories.TeaRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    teaRepository.findByIdAndUserId(id, userId)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:52:19: value name is not a member of models.Forms.RegisterData[0m
+[0m[[0m[31merror[0m] [0m[0m      name = data.name,[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:64:36: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m  def update(id: Long, data: Forms.UpdateProfileData): Future[Int] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:114:43: type ProfileUpdateData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateProfile(id: Long, data: Forms.ProfileUpdateData): Future[Option[User]] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:117:12: unknown parameter name: name[0m
+[0m[[0m[31merror[0m] [0m[0m      name = data.name[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:132:20: value findById is not a member of repositories.UserRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.findById(id)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:140:16: overloaded method apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (id: Option[Long],email: String,password: String,name: String,createdAt: org.joda.time.DateTime,updatedAt: org.joda.time.DateTime)models.User <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (email: String,password: String,name: String)models.User[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (id: None.type, email: String, password: String, createdAt: java.time.LocalDate, updatedAt: java.time.LocalDate)[0m
+[0m[[0m[31merror[0m] [0m[0m    val user = User([0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:147:26: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.concurrent.Future[models.User][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[Long][0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.create(user)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:154:20: value findById is not a member of repositories.UserRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.findById(id).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:155:56: value password is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m      case Some(user) => BCrypt.checkpw(password, user.password)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:138:7: method create is defined twice;[0m
+[0m[[0m[31merror[0m] [0m[0m  the conflicting method create was defined at line 48:7[0m
+[0m[[0m[31merror[0m] [0m[0m  def create(data: Forms.RegisterData): Future[Long] = {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/editTea.scala.html:21:13: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m      @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/index.scala.html:58:25: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m                  @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:1:1: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m@(form: Form[models.Forms.UpdateProfileData], passwordForm: Form[models.Forms.PasswordUpdateData])(implicit request: RequestHeader, messages: Messages, flash: Flash)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:1:27: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m@(form: Form[models.Forms.UpdateProfileData], passwordForm: Form[models.Forms.PasswordUpdateData])(implicit request: RequestHeader, messages: Messages, flash: Flash)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:17:45: value updateProfile is not a member of controllers.ReverseTeaController[0m
+[0m[[0m[31merror[0m] [0m[0m          @helper.form(routes.TeaController.updateProfile(), Symbol("class") -> "space-y-4") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:52:3: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m} [0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/show.scala.html:15:12: not found: value CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m          @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/showTea.scala.html:8:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.TeaController.edit(tea.id)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/tea/index.scala.html:31:87: no arguments allowed for nullary method toString: (): String[0m
+[0m[[0m[31merror[0m] [0m[0m            <td class="px-6 py-4 border-b border-gray-300">@tea.purchaseDate.toString("yyyy-MM-dd")</td>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/tea/show.scala.html:30:41: no arguments allowed for nullary method toString: (): String[0m
+[0m[[0m[31merror[0m] [0m[0m          <p>@tea.purchaseDate.toString("yyyy-MM-dd")</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m56 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 42 Scala sources and 1 Java source to /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:15:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:6:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:70:21: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth method create in class UserService of type (data: models.Forms.RegisterData): scala.concurrent.Future[Long][0m
+[0m[[0m[31merror[0m] [0m[0mand  method create in class UserService of type (data: models.Forms.RegisterData): scala.concurrent.Future[models.User][0m
+[0m[[0m[31merror[0m] [0m[0mmatch argument types (models.Forms.RegisterData)[0m
+[0m[[0m[31merror[0m] [0m[0m        userService.create(registerData).map { _ =>[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:103:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:103:42: missing argument list for method unapply in object CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:128:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:128:42: missing argument list for method unapply in object UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/TeaController.scala:163:53: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.Forms.PasswordUpdateData[0m
+[0m[[0m[31merror[0m] [0m[0m            userService.updatePassword(userId, data.newPassword).map { _ =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:9:12: object github is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.github.tototoshi.slick.PostgresJodaSupport._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:13:8: object BaseColumnType is not a member of package slick.lifted[0m
+[0m[[0m[31merror[0m] [0m[0mimport slick.lifted.{ProvenShape, BaseColumnType}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:60:26: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:61:25: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:108:14: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    teaType: TeaType,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:109:13: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    status: TeaStatus,[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:119:37: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def tupled = (t: (Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:119:46: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def tupled = (t: (Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:122:52: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def unapply(r: TeasRow): Option[(Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:122:61: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def unapply(r: TeasRow): Option[(Long, String, TeaType, TeaStatus, LocalDate, Option[JBigDecimal], Option[JBigDecimal], Option[String], DateTime, DateTime)] =[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:144:17: _ must follow method; cannot follow models.User.apply.type[0m
+[0m[[0m[31merror[0m] [0m[0m    ) <> ((User.apply _).tupled, User.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:50:34: No Json formatter found for type java.math.BigDecimal. Try to implement an implicit Format for this type.[0m
+[0m[[0m[31merror[0m] [0m[0m    (__ \ "price").formatNullable[JBigDecimal] and[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:55:9: missing argument list for method apply in object Tea[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_,_,_,_,_,_,_,_,_,_,_)` instead of `apply`.[0m
+[0m[[0m[31merror[0m] [0m[0m  )(Tea.apply, unlift(Tea.unapply))[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:111:29: overloaded method unapply needs result type[0m
+[0m[[0m[31merror[0m] [0m[0m  def unapply = Tea.unapply _[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:31:35: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  def createdAt = column[DateTime]("created_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/User.scala:32:35: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  def updatedAt = column[DateTime]("updated_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:33:48: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaTypeMapper: BaseColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:38:50: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaStatusMapper: BaseColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:24:26: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:25:25: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:33:81: not found: type TeaType[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaTypeMapper: BaseColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:38:85: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val teaStatusMapper: BaseColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:27:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(row.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:50:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : models.Tables.UsersRow[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.User[0m
+[0m[[0m[31merror[0m] [0m[0m    db.run((Tables.Users returning Tables.Users.map(_.id)) += row).map { id =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:67:52: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : models.Tables.UsersRow[0m
+[0m[[0m[31merror[0m] [0m[0m required: models.Tables.UsersTable#TableElementType[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  models.User[0m
+[0m[[0m[31merror[0m] [0m[0m    db.run(Tables.Users.filter(_.id === id).update(row))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:84:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:102:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/TeaService.scala:57:19: value findByIdAndUserId is not a member of repositories.TeaRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    teaRepository.findByIdAndUserId(id, userId)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:52:19: value name is not a member of models.Forms.RegisterData[0m
+[0m[[0m[31merror[0m] [0m[0m      name = data.name,[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:64:36: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m  def update(id: Long, data: Forms.UpdateProfileData): Future[Int] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:114:43: type ProfileUpdateData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateProfile(id: Long, data: Forms.ProfileUpdateData): Future[Option[User]] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:117:12: unknown parameter name: name[0m
+[0m[[0m[31merror[0m] [0m[0m      name = data.name[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:132:20: value findById is not a member of repositories.UserRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.findById(id)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:140:16: overloaded method apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (id: Option[Long],email: String,password: String,name: String,createdAt: org.joda.time.DateTime,updatedAt: org.joda.time.DateTime)models.User <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (email: String,password: String,name: String)models.User[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (id: None.type, email: String, password: String, createdAt: java.time.LocalDate, updatedAt: java.time.LocalDate)[0m
+[0m[[0m[31merror[0m] [0m[0m    val user = User([0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:147:26: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.concurrent.Future[models.User][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[Long][0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.create(user)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:154:20: value findById is not a member of repositories.UserRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.findById(id).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:155:56: value password is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m      case Some(user) => BCrypt.checkpw(password, user.password)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:138:7: method create is defined twice;[0m
+[0m[[0m[31merror[0m] [0m[0m  the conflicting method create was defined at line 48:7[0m
+[0m[[0m[31merror[0m] [0m[0m  def create(data: Forms.RegisterData): Future[Long] = {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/editTea.scala.html:21:13: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m      @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/index.scala.html:58:25: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m                  @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:1:1: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m@(form: Form[models.Forms.UpdateProfileData], passwordForm: Form[models.Forms.PasswordUpdateData])(implicit request: RequestHeader, messages: Messages, flash: Flash)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:1:27: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m@(form: Form[models.Forms.UpdateProfileData], passwordForm: Form[models.Forms.PasswordUpdateData])(implicit request: RequestHeader, messages: Messages, flash: Flash)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:17:45: value updateProfile is not a member of controllers.ReverseTeaController[0m
+[0m[[0m[31merror[0m] [0m[0m          @helper.form(routes.TeaController.updateProfile(), Symbol("class") -> "space-y-4") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:52:3: type UpdateProfileData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m} [0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/show.scala.html:15:12: not found: value CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m          @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/showTea.scala.html:8:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.TeaController.edit(tea.id)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/tea/index.scala.html:31:87: no arguments allowed for nullary method toString: (): String[0m
+[0m[[0m[31merror[0m] [0m[0m            <td class="px-6 py-4 border-b border-gray-300">@tea.purchaseDate.toString("yyyy-MM-dd")</td>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/tea/show.scala.html:30:41: no arguments allowed for nullary method toString: (): String[0m
+[0m[[0m[31merror[0m] [0m[0m          <p>@tea.purchaseDate.toString("yyyy-MM-dd")</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m56 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m

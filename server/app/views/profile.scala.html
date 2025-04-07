@@ -1,0 +1,68 @@
+@(profileForm: Form[forms.Forms.UpdateProfileData])(implicit request: RequestHeader, messages: Messages)
+
+@main("プロフィール") {
+  <div class="container">
+    <div class="panel">
+      <h1>プロフィール</h1>
+
+      @request.flash.get("success").map { message =>
+        <div class="alert alert-success">@message</div>
+      }
+
+      @request.flash.get("error").map { message =>
+        <div class="alert alert-danger">@message</div>
+      }
+
+      @helper.form(routes.UserController.updateProfile()) {
+        @helper.CSRF.formField
+
+        @helper.inputText(
+          profileForm("name"),
+          Symbol("label") -> "名前",
+          Symbol("class") -> "form-control"
+        )
+
+        @helper.inputText(
+          profileForm("email"),
+          Symbol("label") -> "メールアドレス",
+          Symbol("type") -> "email",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        <button type="submit" class="btn btn-primary">更新</button>
+      }
+
+      <hr>
+
+      <h2>パスワードの変更</h2>
+
+      @helper.form(routes.UserController.changePassword()) {
+        @helper.CSRF.formField
+
+        @helper.inputPassword(
+          forms.Forms.changePasswordForm("currentPassword"),
+          Symbol("label") -> "現在のパスワード",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        @helper.inputPassword(
+          forms.Forms.changePasswordForm("newPassword"),
+          Symbol("label") -> "新しいパスワード",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        @helper.inputPassword(
+          forms.Forms.changePasswordForm("confirmPassword"),
+          Symbol("label") -> "新しいパスワード（確認）",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        <button type="submit" class="btn btn-primary">変更</button>
+      }
+    </div>
+  </div>
+} 

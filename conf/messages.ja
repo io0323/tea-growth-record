@@ -1,0 +1,84 @@
+# Messages
+# ~~~~~
+
+# Global
+error.required = この項目は必須です
+error.number = 数値を入力してください
+error.date = 日付を入力してください
+error.teaType = お茶の種類を選択してください
+error.teaStatus = お茶の状態を選択してください
+
+# Auth
+auth.login.title = ログイン
+auth.login.email = メールアドレス
+auth.login.password = パスワード
+auth.login.submit = ログイン
+auth.login.register = 新規登録はこちら
+auth.login.error = メールアドレスまたはパスワードが間違っています
+
+auth.register.title = ユーザー登録
+auth.register.name = 名前
+auth.register.email = メールアドレス
+auth.register.password = パスワード
+auth.register.submit = 登録
+auth.register.login = ログインはこちら
+auth.register.error = このメールアドレスは既に登録されています
+
+# Tea
+tea.index.title = お茶一覧
+tea.show.title = お茶の詳細
+tea.create.title = お茶の新規作成
+tea.edit.title = お茶の編集
+
+tea.name = 名前
+tea.teaType = 種類
+tea.status = 状態
+tea.purchaseDate = 購入日
+tea.price = 価格
+tea.weight = 重量
+tea.notes = メモ
+
+tea.submit = 保存
+tea.delete = 削除
+tea.back = 戻る
+
+tea.created = お茶を登録しました
+tea.updated = お茶を更新しました
+tea.deleted = お茶を削除しました
+
+# Error messages
+error.notFound = ページが見つかりませんでした
+error.notFound.title = ページが見つかりません
+error.notFound.message = お探しのページは存在しません。
+error.notFound.home = ホームに戻る
+error.invalid = 無効な値です
+
+# Common messages
+common.backToHome = ホームに戻る
+common.save = 保存
+common.cancel = キャンセル
+common.delete = 削除
+common.edit = 編集
+common.create = 新規作成
+
+# Tea-related messages
+tea.name = お茶の名前
+tea.type = 種類
+tea.status = 状態
+tea.purchaseDate = 購入日
+tea.price = 価格
+tea.weight = 重量
+tea.notes = メモ
+tea.create = お茶を登録
+tea.edit = お茶を編集
+tea.delete = お茶を削除
+tea.delete.confirm = このお茶を削除してもよろしいですか？
+
+# Password-related messages
+password.current = 現在のパスワード
+password.new = 新しいパスワード
+password.confirm = パスワード（確認）
+password.update = パスワードを更新
+password.update.success = パスワードを更新しました
+password.update.error = 現在のパスワードが正しくありません
+password.mismatch = パスワードが一致しません 

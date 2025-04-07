@@ -1,0 +1,49 @@
+@import forms.Forms.RegisterData
+@(registerForm: Form[RegisterData])(implicit request: RequestHeader, messages: Messages)
+
+@main("新規登録") {
+  <div class="container">
+    <div class="panel">
+      <h1>新規登録</h1>
+
+      @request.flash.get("success").map { message =>
+        <div class="alert alert-success">@message</div>
+      }
+
+      @request.flash.get("error").map { message =>
+        <div class="alert alert-danger">@message</div>
+      }
+
+      @helper.form(routes.AuthController.registerSubmit()) {
+        @helper.CSRF.formField
+
+        @helper.inputText(
+          registerForm("name"),
+          Symbol("label") -> "名前",
+          Symbol("class") -> "form-control"
+        )
+
+        @helper.inputText(
+          registerForm("email"),
+          Symbol("label") -> "メールアドレス",
+          Symbol("type") -> "email",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        @helper.inputPassword(
+          registerForm("password"),
+          Symbol("label") -> "パスワード",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        <button type="submit" class="btn btn-primary">登録</button>
+      }
+
+      <hr>
+
+      <p>すでにアカウントをお持ちの方は<a href="@routes.AuthController.login()">こちら</a>からログインしてください。</p>
+    </div>
+  </div>
+} 
