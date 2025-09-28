@@ -1,0 +1,85 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:8:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyConfig := "verify.conf",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:8:14: not found: value verifyConfig[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyConfig := "verify.conf",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:9:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyTarget := "production",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:9:14: not found: value verifyTarget[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyTarget := "production",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:10:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyUser := "deploy",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:10:14: not found: value verifyUser[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyUser := "deploy",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:11:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyHost := "example.com",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:11:14: not found: value verifyHost[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyHost := "example.com",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:12:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyPort := 22,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:12:14: not found: value verifyPort[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyPort := 22,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:13:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyKey := file("~/.ssh/id_rsa"),[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:13:14: not found: value verifyKey[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyKey := file("~/.ssh/id_rsa"),[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:14:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyPath := "/var/www/tea-growth-record",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:14:14: not found: value verifyPath[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyPath := "/var/www/tea-growth-record",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:15:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyBranch := "master",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:15:14: not found: value verifyBranch[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyBranch := "master",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:16:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyCommit := "HEAD",[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:16:14: not found: value verifyCommit[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyCommit := "HEAD",[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:17:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyTag := None,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:17:14: not found: value verifyTag[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyTag := None,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:18:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyForce := false,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:18:14: not found: value verifyForce[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyForce := false,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:19:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyClean := true,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:19:14: not found: value verifyClean[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyClean := true,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:20:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyRestart := true,[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:20:14: not found: value verifyRestart[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyRestart := true,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:21:5: not found: value verify[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyRestartCommand := "sudo systemctl restart tea-growth-record"[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/Verify.scala:21:14: not found: value verifyRestartCommand[0m
+[0m[[0m[31merror[0m] [0m[0m    verify / verifyRestartCommand := "sudo systemctl restart tea-growth-record"[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m28 errors found[0m

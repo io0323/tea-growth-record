@@ -1,0 +1,54 @@
+name := "tea-growth-record"
+organization := "com.example"
+
+version := "1.0-SNAPSHOT"
+
+lazy val root = (project in file("."))
+  .enablePlugins(PlayScala)
+  .settings(
+    libraryDependencies ++= Seq(
+      guice,
+      "com.typesafe.play" %% "play-slick" % "5.2.0",
+      "com.typesafe.play" %% "play-slick-evolutions" % "5.2.0",
+      "com.typesafe.play" %% "play-scala-csrf" % playVersion,
+      "com.typesafe.play" %% "play-scala-csrf-bundle" % playVersion,
+      "mysql" % "mysql-connector-java" % "8.0.33",
+      "org.joda" % "joda-convert" % "2.0.2",
+      "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
+      "com.typesafe.play" %% "play-json-joda" % playVersion,
+      "org.mindrot" % "jbcrypt" % "0.4",
+      "com.typesafe.play" %% "play-filters-helpers" % playVersion,
+      "com.typesafe.play" %% "play-ws" % playVersion
+    ),
+    libraryDependencies ++= Seq(
+      "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test,
+      "com.typesafe.play" %% "play-scala-csrf-bundle" % playVersion % Test
+    ),
+    scalacOptions ++= Seq(
+      "-feature",
+      "-deprecation",
+      "-Xfatal-warnings"
+    )
+  )
+
+scalaVersion := "2.13.12"
+
+// Server configuration
+PlayKeys.devSettings += "play.server.http.port" -> "9000"
+
+// Adds additional packages into Twirl
+TwirlKeys.templateImports ++= Seq(
+  "models._",
+  "forms._",
+  "play.api.i18n.Messages",
+  "play.api.mvc.RequestHeader",
+  "play.filters.csrf.CSRF",
+  "play.filters.csrf.CSRF.Token",
+  "java.time.format.DateTimeFormatter"
+)
+
+// Adds additional packages into conf/routes
+play.sbt.routes.RoutesKeys.routesImport ++= Seq(
+  "models.TeaType",
+  "models.TeaStatus"
+) 

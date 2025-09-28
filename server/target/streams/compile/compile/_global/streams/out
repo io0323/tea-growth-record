@@ -1,0 +1,562 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:14:8: object TeaType is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.{TeaType, User}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:10:8: object TeaStatus is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0mimport models.TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/AuthController.scala:9:27: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json.Json[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/AuthController.scala:55:36: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def logout() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:9:33: object Execution is not a member of package play.api.libs.concurrent[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.concurrent.Execution.Implicits.defaultContext[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:38:62: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Seq[models.Tea][0m
+[0m[[0m[31merror[0m] [0m[0m required: List[models.Tea][0m
+[0m[[0m[31merror[0m] [0m[0m            case Some(user) => Ok(views.html.dashboard(user, teas))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:47:36: too many arguments (found 2, expected 1) for method apply: (loginForm: play.api.data.Form[forms.Forms.LoginData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object login[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.login(loginForm, getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:52:87: too many arguments (found 2, expected 1) for method apply: (loginForm: play.api.data.Form[forms.Forms.LoginData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object login[0m
+[0m[[0m[31merror[0m] [0m[0m      formWithErrors => Future.successful(BadRequest(views.html.login(formWithErrors, getCsrfToken))),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:56:44: value dashboard is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            Redirect(routes.HomeController.dashboard())[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:59:100: too many arguments (found 2, expected 1) for method apply: (loginForm: play.api.data.Form[forms.Forms.LoginData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object login[0m
+[0m[[0m[31merror[0m] [0m[0m            BadRequest(views.html.login(loginForm.withError("email", "メールアドレスまたはパスワードが正しくありません。"), getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:66:42: too many arguments (found 2, expected 1) for method apply: (registerForm: play.api.data.Form[forms.Forms.RegisterData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object register[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.register(registerForm, getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:71:90: too many arguments (found 2, expected 1) for method apply: (registerForm: play.api.data.Form[forms.Forms.RegisterData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object register[0m
+[0m[[0m[31merror[0m] [0m[0m      formWithErrors => Future.successful(BadRequest(views.html.register(formWithErrors, getCsrfToken))),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:73:21: value createUser is not a member of services.UserService[0m
+[0m[[0m[31merror[0m] [0m[0m        userService.createUser(data.username, data.email, data.password).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:73:37: value username is not a member of forms.Forms.RegisterData[0m
+[0m[[0m[31merror[0m] [0m[0m        userService.createUser(data.username, data.email, data.password).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:75:44: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            Redirect(routes.HomeController.login())[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:78:102: too many arguments (found 2, expected 1) for method apply: (registerForm: play.api.data.Form[forms.Forms.RegisterData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object register[0m
+[0m[[0m[31merror[0m] [0m[0m            BadRequest(views.html.register(registerForm.withError("email", "このメールアドレスは既に使用されています。"), getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:186:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, Long, Option[java.time.LocalDate], Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => forms.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, Long, Option[java.time.LocalDate], Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:186:42: missing argument list for method unapply in object CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:107:69: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => Future.successful(Redirect(routes.HomeController.login()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:115:67: object viewTea is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case Some(tea) if tea.userId == userId => Ok(views.html.viewTea(tea))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:116:41: object notFound is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case _ => NotFound(views.html.notFound())[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:118:69: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => Future.successful(Redirect(routes.HomeController.login()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:200:30: Cannot find Formatter type class for models.TeaStatusType.TeaStatusType. Perhaps you will need to import play.api.data.format.Formats._ [0m
+[0m[[0m[31merror[0m] [0m[0m      "status" -> optional(of[TeaStatusType.TeaStatusType])[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:201:42: missing argument list for method unapply in object UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:134:17: too many arguments (found 3, expected 2) for method apply: (id: Long, form: play.api.data.Form[forms.Forms.UpdateTeaData])(implicit request: play.api.mvc.RequestHeader, messagesProvider: play.api.i18n.MessagesProvider): play.twirl.api.HtmlFormat.Appendable in object editTea[0m
+[0m[[0m[31merror[0m] [0m[0m            )), getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:135:41: object notFound is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case _ => NotFound(views.html.notFound())[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:137:69: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => Future.successful(Redirect(routes.HomeController.login()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:156:69: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => Future.successful(Redirect(routes.HomeController.login()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:163:20: value deleteTea is not a member of services.TeaService[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean delete?[0m
+[0m[[0m[31merror[0m] [0m[0m        teaService.deleteTea(id, userId).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:165:44: value dashboard is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            Redirect(routes.HomeController.dashboard())[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:168:35: object teaList is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m            BadRequest(views.html.teaList(Seq.empty, getCsrfToken)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:171:69: value login is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m      case None => Future.successful(Redirect(routes.HomeController.login()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:199:66: value profile is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                  case Some(_) => Redirect(routes.HomeController.profile())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:202:22: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m                    .flashing("error" -> "プロフィールの更新に失敗しました。"))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:215:9: not found: value changePasswordForm[0m
+[0m[[0m[31merror[0m] [0m[0m        changePasswordForm.bindFromRequest().fold([0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:217:14: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m            .flashing("error" -> "パスワードの変更に失敗しました。"))),[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:222:63: value profile is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                  case true => Redirect(routes.HomeController.profile())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:225:22: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m                    .flashing("error" -> "パスワードの変更に失敗しました。"))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:228:18: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m                .flashing("error" -> "現在のパスワードが正しくありません。")))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:89:28: adapted the argument list to the expected 2-tuple: add additional parens instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        signature: createTea.apply(form: play.api.data.Form[forms.Forms.CreateTeaData])(implicit request: play.api.mvc.RequestHeader, implicit messagesProvider: play.api.i18n.MessagesProvider): play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[33mwarn[0m] [0m[0m  given arguments: createTeaForm, getCsrfToken[0m
+[0m[[0m[33mwarn[0m] [0m[0m after adaptation: createTea((createTeaForm, getCsrfToken): <error>) [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m    Ok(views.html.createTea(createTeaForm, getCsrfToken))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:5:28: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.Forms._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:6:22: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:8:27: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:9:53: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.concurrent.Execution.Implicits.defaultContext[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:11:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models._[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:15:27: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json.Json[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:26:15: private method getCsrfToken in class HomeController is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private def getCsrfToken(implicit request: RequestHeader): CSRF.Token = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:46:35: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def login() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:50:47: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def loginSubmit() = Action.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:65:38: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def register() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:69:50: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def registerSubmit() = Action.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:84:36: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def logout() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:22:24: not enough arguments for method apply: (teas: Seq[models.Tea])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages): play.twirl.api.HtmlFormat.Appendable in object index.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter teas.[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.index())[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:21:35: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def index() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:25:44: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def list() = authAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:31:51: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def get(id: Long) = authAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:63:54: parameter request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def delete(id: Long) = authAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:49:27: not found: value Forms[0m
+[0m[[0m[31merror[0m] [0m[0m    request.body.validate[Forms.CreateTeaData].fold([0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:73:27: not found: value Forms[0m
+[0m[[0m[31merror[0m] [0m[0m    request.body.validate[Forms.UpdateTeaData].fold([0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:116:18: value uploadImage is not a member of services.TeaService[0m
+[0m[[0m[31merror[0m] [0m[0m      teaService.uploadImage(id, picture.ref, request.user.id.get).map {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:5:22: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.Form[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:10:21: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport forms.Forms.{CreateTeaData, UpdateTeaData}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:10:36: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport forms.Forms.{CreateTeaData, UpdateTeaData}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:11:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.Tea[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:12:22: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.Files[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/TeaController.scala:13:21: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.mvc.MultipartFormData[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:39:62: value profile is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m              case Some(_) => Redirect(routes.HomeController.profile())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:42:18: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m                .flashing("error" -> "プロフィールの更新に失敗しました。"))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:51:11: value changePasswordForm is not a member of object forms.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m    Forms.changePasswordForm.bindFromRequest().fold([0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:53:10: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m        .flashing("error" -> "パスワードの変更に失敗しました。"))),[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:58:59: value profile is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m              case true => Redirect(routes.HomeController.profile())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:61:18: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m                .flashing("error" -> "パスワードの変更に失敗しました。"))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:64:14: value flashing is not a member of play.twirl.api.HtmlFormat.Appendable[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value flashing`?[0m
+[0m[[0m[31merror[0m] [0m[0m            .flashing("error" -> "現在のパスワードが正しくありません。")))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/UserController.scala:9:27: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json.Json[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:6:17: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport java.sql.Timestamp[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:7:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.Tea[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:9:45: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.validation.Constraints._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:10:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.TeaStatus[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:12:37: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.format.Formats._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:14:16: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.{TeaType, User}[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:14:25: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.{TeaType, User}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:15:18: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport java.time.LocalDate[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:18:30: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport java.time.{LocalDate, LocalDateTime}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:27:15: private val dateFormatter in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val dateFormatter = DateTimeFormatter.ofPattern(DATE_FORMAT)[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:207:15: private method jodaDate in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private def jodaDate(pattern: String = DATE_FORMAT): Mapping[DateTime] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:207:24: private default argument in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private def jodaDate(pattern: String = DATE_FORMAT): Mapping[DateTime] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/handlers/ErrorHandler.scala:16:38: parameter ec in class ErrorHandler is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  router: Provider[Router])(implicit ec: ExecutionContext)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Plant.scala:37:69: multiarg infix syntax looks like a tuple and will be deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def * = (id.?, name, species, userId.?, createdAt.?, updatedAt.?) <> ([0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:62:53: No instance of play.api.libs.json.Format is available for scala.Option[java.math.BigDecimal], scala.Option[java.math.BigDecimal], scala.Enumeration.Value in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaFormat: OFormat[Tea] = Json.format[Tea][0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:74:41: could not find implicit value for parameter tt: slick.ast.TypedType[Option[java.math.BigDecimal]][0m
+[0m[[0m[31merror[0m] [0m[0m  def price = column[Option[BigDecimal]]("price")[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:75:44: could not find implicit value for parameter tt: slick.ast.TypedType[Option[java.math.BigDecimal]][0m
+[0m[[0m[31merror[0m] [0m[0m  def quantity = column[Option[BigDecimal]]("quantity")[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:93:5: multiarg infix syntax looks like a tuple and will be deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ) <> (Tea.tupled, Tea.unapply)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:5:19: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport slick.jdbc.JdbcProfile[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/TeaStatusType.scala:12:16: Implicit definition should have explicit type (inferred slick.jdbc.MySQLProfile.BaseColumnType[models.TeaStatusType.TeaStatusType]) [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m  implicit val teaStatusTypeMapper = MappedColumnType.base[TeaStatusType, String]([0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/TeaTypes.scala:40:21: value tupled is not a member of object models.TeaTypeData[0m
+[0m[[0m[31merror[0m] [0m[0m  ) <> (TeaTypeData.tupled, TeaTypeData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/TeaTypes.scala:40:5: multiarg infix syntax looks like a tuple and will be deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ) <> (TeaTypeData.tupled, TeaTypeData.unapply)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/TeaTypes.scala:5:19: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport slick.jdbc.JdbcProfile[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/TeaTypes.scala:6:22: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport slick.lifted.{TableQuery, Tag}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:58:14: value tupled is not a member of object models.User[0m
+[0m[[0m[31merror[0m] [0m[0m  ) <> (User.tupled, User.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:70:55: No apply function found matching unapply parameters[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val userFormat: OFormat[User] = Json.format[User][0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:82:5: overloaded method apply with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (id: Option[Long],email: String,password: String,name: Option[String],createdAt: Option[java.time.LocalDateTime],updatedAt: Option[java.time.LocalDateTime])models.User <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (id: Option[Long],username: String,email: String,passwordHash: String,createdAt: java.time.LocalDateTime,updatedAt: java.time.LocalDateTime)models.User[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (None.type, String, String, None.type, java.time.LocalDateTime, java.time.LocalDateTime)[0m
+[0m[[0m[31merror[0m] [0m[0m    User(None, email, passwordHash, None, createdAt, updatedAt)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:92:53: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.time.LocalDateTime[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[java.time.LocalDateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  ): User = new User(id, email, passwordHash, None, createdAt, updatedAt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:92:64: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.time.LocalDateTime[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[java.time.LocalDateTime][0m
+[0m[[0m[31merror[0m] [0m[0m  ): User = new User(id, email, passwordHash, None, createdAt, updatedAt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:95:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[java.time.LocalDateTime][0m
+[0m[[0m[31merror[0m] [0m[0m required: java.time.LocalDateTime[0m
+[0m[[0m[31merror[0m] [0m[0m    Some((user.id, user.email, user.password, user.name, user.createdAt, user.updatedAt))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:95:79: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[java.time.LocalDateTime][0m
+[0m[[0m[31merror[0m] [0m[0m required: java.time.LocalDateTime[0m
+[0m[[0m[31merror[0m] [0m[0m    Some((user.id, user.email, user.password, user.name, user.createdAt, user.updatedAt))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:58:5: multiarg infix syntax looks like a tuple and will be deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0m  ) <> (User.tupled, User.unapply)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:4:17: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport java.sql.Timestamp[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:7:28: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport org.mindrot.jbcrypt.BCrypt[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:8:21: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport slick.lifted.ProvenShape[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:10:19: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport slick.jdbc.JdbcProfile[0m
+[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/TeaRepository.scala:19:37: type Teas is not a member of object models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m  private val teas = TableQuery[Tea.Teas][0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/TeaRepository.scala:19:15: private val teas in class TeaRepository is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val teas = TableQuery[Tea.Teas][0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/TeaRepository.scala:15:12: parameter ec in class TeaRepository is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m)(implicit ec: ExecutionContext) extends HasDatabaseConfigProvider[JdbcProfile] {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/UserRepository.scala:18:39: type Users is not a member of object models.User[0m
+[0m[[0m[31merror[0m] [0m[0m  private val users = TableQuery[User.Users][0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/UserRepository.scala:18:15: private val users in class UserRepository is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val users = TableQuery[User.Users][0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/repositories/UserRepository.scala:15:12: parameter ec in class UserRepository is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m)(implicit ec: ExecutionContext) extends HasDatabaseConfigProvider[JdbcProfile] {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:30:16: recursive value email needs type[0m
+[0m[[0m[31merror[0m] [0m[0m      to = Seq(email),[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:45:16: recursive value email needs type[0m
+[0m[[0m[31merror[0m] [0m[0m      to = Seq(email),[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:17:15: private val from in class EmailService is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val from = config.get[String]("email.from")[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:18:15: private val baseUrl in class EmailService is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val baseUrl = config.get[String]("application.baseUrl")[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:26:9: local val body in method sendPasswordResetEmail is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val body = views.html.emails.resetPassword(resetUrl).toString[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:41:9: local val body in method sendWelcomeEmail is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val body = views.html.emails.welcome(name.getOrElse("ユーザー")).toString[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/EmailService.scala:15:12: parameter ec in class EmailService is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m)(implicit ec: ExecutionContext) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/PlantService.scala:26:71: multiarg infix syntax looks like a tuple and will be deprecated[0m
+[0m[[0m[33mwarn[0m] [0m[0m    def * = (id.?, name, species, userId.?, createdAt.?, updatedAt.?) <> ([0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/TeaService.scala:15:12: parameter ec in class TeaService is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m)(implicit ec: ExecutionContext) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:12:1: value signup is not a member of controllers.AuthController[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /signup                     controllers.AuthController.signup()[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:13:1: value signupSubmit is not a member of controllers.AuthController[0m
+[0m[[0m[31merror[0m] [0m[0mPOST    /signup                     controllers.AuthController.signupSubmit()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:21:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method index,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0mGET     /api/teas                   controllers.TeaController.index[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:23:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method create,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0mPOST    /api/teas                   controllers.TeaController.create[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:21:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method index,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0mGET     /api/teas                   controllers.TeaController.index[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:23:1: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method create,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0mPOST    /api/teas                   controllers.TeaController.create[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:6:1: private val controllers_HomeController_index0_invoker in class Routes is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mGET     /                           controllers.HomeController.index()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:12:1: private val controllers_AuthController_signup4_invoker in class Routes is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mGET     /signup                     controllers.AuthController.signup()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:13:1: private val controllers_AuthController_signupSubmit5_invoker in class Routes is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mPOST    /signup                     controllers.AuthController.signupSubmit()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:17:1: private val controllers_UserController_updateProfile7_invoker in class Routes is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mPOST    /profile/update             controllers.UserController.updateProfile()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/conf/routes:18:1: private val controllers_UserController_changePassword8_invoker in class Routes is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mPOST    /profile/change-password    controllers.UserController.changePassword()[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/create.scala.html:1:2: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m [0m
+[0m[[0m[33mwarn[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/createTea.scala.html:17:44: value doCreateTea is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        @helper.form(routes.HomeController.doCreateTea(), Symbol("class") -> "mt-4") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/createTea.scala.html:123:45: value dashboard is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.dashboard()" class="btn btn-secondary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/createTea.scala.html:1:1: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m@(form: Form[forms.Forms.CreateTeaData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:7:24: value usernameさん is not a member of models.User[0m
+[0m[[0m[31merror[0m] [0m[0m        <h1>ようこそ、@user.usernameさん</h1>[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:16:43: value createTea is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m          <a href="@routes.HomeController.createTea()" class="btn btn-primary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:34:24: value imageUrl is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m                  @tea.imageUrl.map { url =>[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:41:57: value teaType is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean teaTypeId?[0m
+[0m[[0m[31merror[0m] [0m[0m                        <i class="fas fa-tag"></i> @tea.teaType<br>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:42:68: value origin is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m                        <i class="fas fa-map-marker-alt"></i> @tea.origin<br>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:43:84: no arguments allowed for nullary method toString: (): String[0m
+[0m[[0m[31merror[0m] [0m[0m                        <i class="fas fa-calendar"></i> @tea.purchaseDate.toString("yyyy/MM/dd")<br>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:47:26: value description is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m                    @tea.description.map { desc =>[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:57:34: value unit is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean wait?[0m
+[0m[[0m[31merror[0m] [0m[0m                            @tea.unit.map { unit =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:67:55: value editTea is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                      <a href="@routes.HomeController.editTea(tea.id)" class="btn btn-outline-primary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:70:55: value deleteTea is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                      <a href="@routes.HomeController.deleteTea(tea.id)" class="btn btn-outline-danger"[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/dashboard.scala.html:1:1: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m@(user: models.User, teas: List[models.Tea])(implicit request: RequestHeader, messagesProvider: MessagesProvider)[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/edit.scala.html:7:18: value nameの編集 is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m        <h1>@tea.nameの編集</h1>[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/edit.scala.html:31:26: object TeaType is not a member of package models[0m
+[0m[[0m[31merror[0m] [0m[0m        options = models.TeaType.values.map(t => t.id.toString -> t.name),[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/edit.scala.html:55:50: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.collection.immutable.SortedSet[(String, String)][0m
+[0m[[0m[31merror[0m] [0m[0m required: Seq[(String, String)][0m
+[0m[[0m[31merror[0m] [0m[0m        options = models.TeaStatusType.values.map(s => s.toString -> s.toString),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/edit.scala.html:63:14: value imageUrl is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m        @tea.imageUrl.map { url =>[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/editTea.scala.html:17:44: value doUpdateTea is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        @helper.form(routes.HomeController.doUpdateTea(id), Symbol("class") -> "mt-4") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/editTea.scala.html:123:45: value dashboard is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m            <a href="@routes.HomeController.dashboard()" class="btn btn-secondary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:10:46: play.api.mvc.Call does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.TeaController.create()" class="btn btn-primary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:33:20: value imageUrl is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m              @tea.imageUrl.map { url =>[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:39:50: value teaType is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean teaTypeId?[0m
+[0m[[0m[31merror[0m] [0m[0m                  <small class="text-muted">@tea.teaType</small>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:41:43: value description is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m                <p class="card-text">@tea.description</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:49:50: value edit is not a member of controllers.ReverseTeaController[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean wait?[0m
+[0m[[0m[31merror[0m] [0m[0m                  <a href="@routes.TeaController.edit(tea.id.get)" class="btn btn-outline-secondary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/index.scala.html:62:39: value format is not a member of Option[java.time.LocalDateTime][0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean forall or foreach?[0m
+[0m[[0m[31merror[0m] [0m[0m                  登録日: @tea.createdAt.format("yyyy/MM/dd")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/login.scala.html:40:56: value register is not a member of controllers.ReverseAuthController[0m
+[0m[[0m[31merror[0m] [0m[0m      <p>アカウントをお持ちでない方は<a href="@routes.AuthController.register()">こちら</a>から登録してください。</p>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/main.scala.html:23:70: play.api.mvc.Call does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m                <a class="nav-link" href="@routes.TeaController.index()">お茶一覧</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/main.scala.html:36:66: value register is not a member of controllers.ReverseAuthController[0m
+[0m[[0m[31merror[0m] [0m[0m                <a class="nav-link" href="@routes.AuthController.register()">新規登録</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/profile.scala.html:44:23: value changePasswordForm is not a member of object forms.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m          forms.Forms.changePasswordForm("currentPassword"),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/profile.scala.html:51:23: value changePasswordForm is not a member of object forms.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m          forms.Forms.changePasswordForm("newPassword"),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/profile.scala.html:58:23: value changePasswordForm is not a member of object forms.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m          forms.Forms.changePasswordForm("confirmPassword"),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/register.scala.html:17:42: value registerSubmit is not a member of controllers.ReverseAuthController[0m
+[0m[[0m[31merror[0m] [0m[0m      @helper.form(routes.AuthController.registerSubmit()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/show.scala.html:11:42: value edit is not a member of controllers.ReverseTeaController[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean wait?[0m
+[0m[[0m[31merror[0m] [0m[0m          <a href="@routes.TeaController.edit(tea.id.get)" class="btn btn-outline-primary">[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/show.scala.html:35:16: value imageUrl is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m          @tea.imageUrl.map { url =>[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/show.scala.html:44:41: value teaType is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean teaTypeId?[0m
+[0m[[0m[31merror[0m] [0m[0m              <dd class="col-sm-9">@tea.teaType</dd>[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/show.scala.html:47:41: value description is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m              <dd class="col-sm-9">@tea.description</dd>[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m74 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m100 errors found[0m

@@ -1,0 +1,331 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.6.2 (Homebrew Java 17.0.14)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 476.546625ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 52.245333ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.120833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 5.756792ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 10.6355 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project server-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(server-build) took 35.223125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id server-build, base: /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project, plugins: List(<none>))) took 58.035125ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project, returning: (server-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 301.151542ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 5.1645ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project/, ...) took 364.033167ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 841.646709ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 3.425375ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 70.282708ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 3.876625ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 753.87025ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 146.839542ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.675834ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 4096.501958ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.003042ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 1.085791ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(com.typesafe.sbt.web.SbtWeb), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttp2Support),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.test.MediatorWorkaroundPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayAkkaHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.gzip.SbtGzip)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,com.typesafe.sbt.web.SbtWeb,play.sbt.PlayScala,com.typesafe.sbt.digest.SbtDigest,sbt.plugins.JvmPlugin,play.sbt.PlayWeb,sbt.plugins.IvyPlugin,sbt.plugins.Giter8TemplatePlugin,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.gzip.SbtGzip,play.twirl.sbt.SbtTwirl,play.sbt.PlayService,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,sbt.plugins.MiniDependencyTreePlugin,play.sbt.PlayLogback,play.sbt.PlayAkkaHttpServer,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 26.711375 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 103.615959ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server, plugins: List(play.sbt.PlayScala && com.typesafe.sbt.web.SbtWeb))) took 136.082875ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 3352.342541ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 5.072542ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/, ...) took 7456.68925ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 7469.394542ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.594875ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 65.804416ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 4.717042ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 261.632041ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 83.737959ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.021542ms[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  __              __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  \ \     ____   / /____ _ __  __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   \ \   / __ \ / // __ `// / / /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   / /  / /_/ // // /_/ // /_/ /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  /_/  / .___//_/ \__,_/ \__, /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m      /_/               /____/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion 2.8.19 running Java 17.0.14[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[1mPlay is run entirely by the community. Please consider contributing and/or donating:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.playframework.com/sponsors[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mRunning Play on Java 17 is experimental. Tweaks are necessary:[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://github.com/playframework/playframework/releases/2.8.15[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(clean, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: clean[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 2025/04/02 14:13:22[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 39 Scala sources and 1 Java source to /Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:9:33: object Execution is not a member of package play.api.libs.concurrent[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.concurrent.Execution.Implicits.defaultContext[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/Tea.scala:64:39: No instance of play.api.libs.json.Format is available for models.TeaStatusType in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaFormat = Json.format[Tea][0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/models/User.scala:69:40: exception during macro expansion: [0m
+[0m[[0m[31merror[0m] [0m[0mscala.ScalaReflectionException: value unapply encapsulates multiple overloaded alternatives and cannot be treated as a method. Consider invoking `<offending symbol>.asTerm.alternatives` and manually picking the required method[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Symbols$SymbolApi.asMethod(Symbols.scala:240)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.api.Symbols$SymbolApi.asMethod$(Symbols.scala:234)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.reflect.internal.Symbols$SymbolContextApiImpl.asMethod(Symbols.scala:99)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1.effectiveUnapply$lzycompute(JsMacroImpl.scala:330)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1.effectiveUnapply(JsMacroImpl.scala:322)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1.play$api$libs$json$JsMacroImpl$CaseClass$$unapplyReturnTypes$lzycompute(JsMacroImpl.scala:334)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1.play$api$libs$json$JsMacroImpl$CaseClass$$unapplyReturnTypes(JsMacroImpl.scala:333)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1$$anonfun$1.applyOrElse(JsMacroImpl.scala:448)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1$$anonfun$1.applyOrElse(JsMacroImpl.scala:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableOnceOps.collectFirst(IterableOnce.scala:1116)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableOnceOps.collectFirst$(IterableOnce.scala:1108)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.collectFirst(Iterable.scala:933)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl$CaseClass$1.<init>(JsMacroImpl.scala:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl.macroCaseImpl$1(JsMacroImpl.scala:697)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl.macroImpl(JsMacroImpl.scala:894)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.api.libs.json.JsMacroImpl.implicitConfigFormatImpl(JsMacroImpl.scala:50)[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val userFormat = Json.format[User][0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:82:62: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Seq[models.Tea][0m
+[0m[[0m[31merror[0m] [0m[0m required: List[models.Tea][0m
+[0m[[0m[31merror[0m] [0m[0m            case Some(user) => Ok(views.html.dashboard(user, teas))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:78:13: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    status: TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:157:57: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.time.LocalDate[0m
+[0m[[0m[31merror[0m] [0m[0m required: play.api.data.Mapping[?][0m
+[0m[[0m[31merror[0m] [0m[0m      "purchaseDate" -> optional(java.time.LocalDate.now()),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:160:22: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m      "status" -> of[TeaStatus][0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:161:42: missing argument list for method unapply in object CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:117:67: object viewTea is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case Some(tea) if tea.userId == userId => Ok(views.html.viewTea(tea))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:118:41: object notFound is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case _ => NotFound(views.html.notFound())[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:90:13: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m    status: TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:171:57: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.time.LocalDate[0m
+[0m[[0m[31merror[0m] [0m[0m required: play.api.data.Mapping[?][0m
+[0m[[0m[31merror[0m] [0m[0m      "purchaseDate" -> optional(java.time.LocalDate.now()),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:174:22: not found: type TeaStatus[0m
+[0m[[0m[31merror[0m] [0m[0m      "status" -> of[TeaStatus][0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:175:42: missing argument list for method unapply in object UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:136:17: too many arguments (found 3, expected 2) for method apply: (id: Long, form: play.api.data.Form[forms.Forms.UpdateTeaData])(implicit request: play.api.mvc.RequestHeader, messagesProvider: play.api.i18n.MessagesProvider): play.twirl.api.HtmlFormat.Appendable in object editTea[0m
+[0m[[0m[31merror[0m] [0m[0m            )), getCsrfToken))[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:137:41: object notFound is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m          case _ => NotFound(views.html.notFound())[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:170:35: object teaList is not a member of package views.html[0m
+[0m[[0m[31merror[0m] [0m[0m            BadRequest(views.html.teaList(Seq.empty, getCsrfToken)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/profile.scala.html:1:1: not found: type UpdateProfileData[0m
+[0m[[0m[31merror[0m] [0m[0m@(profileForm: Form[UpdateProfileData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/views/profile.scala.html:1:21: not found: type UpdateProfileData[0m
+[0m[[0m[31merror[0m] [0m[0m@(profileForm: Form[UpdateProfileData])(implicit request: RequestHeader, messagesProvider: MessagesProvider)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/UserService.scala:9:8: value ProfileData is not a member of object forms.Forms[0m
+[0m[[0m[31merror[0m] [0m[0mimport forms.Forms.{RegisterData, ProfileData, PasswordData}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/services/UserService.scala:68:41: not found: type ProfileData[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateProfile(userId: Long, data: ProfileData): Future[Boolean] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:5:28: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.Forms._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:6:22: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:8:27: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:9:53: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.libs.concurrent.Execution.Implicits.defaultContext[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:11:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models._[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/HomeController.scala:70:36: parameter value request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def logout() = Action { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:25:53: parameter value request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def list() = authenticatedAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:31:60: parameter value request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def get(id: Long) = authenticatedAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/controllers/PlantController.scala:63:63: parameter value request in anonymous function is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def delete(id: Long) = authenticatedAction.async { implicit request =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:6:17: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport java.sql.Timestamp[0m
+[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:7:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.Tea[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:9:45: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.validation.Constraints._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:10:15: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.TeaStatus[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:12:37: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport play.api.data.format.Formats._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:14:16: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.{TeaType, User}[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:14:25: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport models.{TeaType, User}[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:24:15: private val dateFormatter in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:181:15: private method jodaDate in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private def jodaDate(pattern: String = DATE_FORMAT): Mapping[DateTime] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/forms/Forms.scala:181:24: private default argument in object Forms is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  private def jodaDate(pattern: String = DATE_FORMAT): Mapping[DateTime] = {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                       ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/server/app/handlers/ErrorHandler.scala:16:38: parameter value ec in class ErrorHandler is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  router: Provider[Router])(implicit ec: ExecutionContext)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                     ^[0m

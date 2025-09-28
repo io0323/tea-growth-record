@@ -1,0 +1,52 @@
+# Messages
+# ~~~~~
+
+# Global
+error.required = この項目は必須です
+error.number = 数値を入力してください
+error.date = 日付を入力してください
+error.teaType = お茶の種類を選択してください
+error.teaStatus = お茶の状態を選択してください
+
+# Auth
+auth.login.title = ログイン
+auth.login.email = メールアドレス
+auth.login.password = パスワード
+auth.login.submit = ログイン
+auth.login.register = 新規登録はこちら
+auth.login.error = メールアドレスまたはパスワードが間違っています
+
+auth.register.title = ユーザー登録
+auth.register.name = 名前
+auth.register.email = メールアドレス
+auth.register.password = パスワード
+auth.register.submit = 登録
+auth.register.login = ログインはこちら
+auth.register.error = このメールアドレスは既に登録されています
+
+# Tea
+tea.index.title = お茶一覧
+tea.show.title = お茶の詳細
+tea.create.title = お茶の新規作成
+tea.edit.title = お茶の編集
+
+tea.name = 名前
+tea.teaType = 種類
+tea.status = 状態
+tea.purchaseDate = 購入日
+tea.price = 価格
+tea.weight = 重量
+tea.notes = メモ
+
+tea.submit = 保存
+tea.delete = 削除
+tea.back = 戻る
+
+tea.created = お茶を登録しました
+tea.updated = お茶を更新しました
+tea.deleted = お茶を削除しました
+
+# Error messages
+error.notFound.title = Not Found
+error.notFound.message = The page you are looking for does not exist.
+error.notFound.home = Take Me Home 

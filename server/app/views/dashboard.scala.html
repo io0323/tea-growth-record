@@ -1,0 +1,84 @@
+@(user: models.User, teas: List[models.Tea])(implicit request: RequestHeader, messagesProvider: MessagesProvider)
+
+@main("ダッシュボード") {
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>ようこそ、@user.usernameさん</h1>
+        <p class="text-muted">@user.email</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>お茶の一覧</h2>
+          <a href="@routes.HomeController.createTea()" class="btn btn-primary">
+            <i class="fas fa-plus"></i> 新規登録
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        @if(teas.isEmpty) {
+          <div class="alert alert-info">
+            お茶が登録されていません。新規登録から始めましょう。
+          </div>
+        } else {
+          <div class="row">
+            @for(tea <- teas) {
+              <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                  @tea.imageUrl.map { url =>
+                    <img src="@url" class="card-img-top" alt="@tea.name">
+                  }
+                  <div class="card-body">
+                    <h5 class="card-title">@tea.name</h5>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <i class="fas fa-tag"></i> @tea.teaType<br>
+                        <i class="fas fa-map-marker-alt"></i> @tea.origin<br>
+                        <i class="fas fa-calendar"></i> @tea.purchaseDate.toString("yyyy/MM/dd")<br>
+                        <i class="fas fa-info-circle"></i> @tea.status
+                      </small>
+                    </p>
+                    @tea.description.map { desc =>
+                      <p class="card-text">@desc</p>
+                    }
+                    @if(tea.price.isDefined || tea.quantity.isDefined) {
+                      <p class="card-text">
+                        <small class="text-muted">
+                          @tea.price.map { price =>
+                            <i class="fas fa-yen-sign"></i> @price
+                          }
+                          @tea.quantity.map { qty =>
+                            @tea.unit.map { unit =>
+                              <i class="fas fa-box"></i> @qty @unit
+                            }
+                          }
+                        </small>
+                      </p>
+                    }
+                  </div>
+                  <div class="card-footer">
+                    <div class="btn-group w-100">
+                      <a href="@routes.HomeController.editTea(tea.id)" class="btn btn-outline-primary">
+                        <i class="fas fa-edit"></i> 編集
+                      </a>
+                      <a href="@routes.HomeController.deleteTea(tea.id)" class="btn btn-outline-danger"
+                         onclick="return confirm('このお茶を削除してもよろしいですか？')">
+                        <i class="fas fa-trash"></i> 削除
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+} 

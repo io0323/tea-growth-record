@@ -1,0 +1,77 @@
+@(tea: models.Tea, teaForm: Form[forms.Forms.UpdateTeaData])(implicit request: RequestHeader, messages: Messages)
+
+@main(s"${tea.name}の編集") {
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h1>@tea.nameの編集</h1>
+      </div>
+    </div>
+
+    @request.flash.get("success").map { message =>
+      <div class="alert alert-success">@message</div>
+    }
+
+    @request.flash.get("error").map { message =>
+      <div class="alert alert-danger">@message</div>
+    }
+
+    @helper.form(routes.TeaController.update(tea.id.get)) {
+      @helper.CSRF.formField
+
+      @helper.inputText(
+        teaForm("name"),
+        Symbol("label") -> "名前",
+        Symbol("class") -> "form-control",
+        Symbol("required") -> true
+      )
+
+      @helper.select(
+        teaForm("teaTypeId"),
+        options = models.TeaType.values.map(t => t.id.toString -> t.name),
+        Symbol("label") -> "種類",
+        Symbol("class") -> "form-control",
+        Symbol("required") -> true
+      )
+
+      @helper.textarea(
+        teaForm("description"),
+        Symbol("label") -> "説明",
+        Symbol("class") -> "form-control",
+        Symbol("rows") -> 3
+      )
+
+      @helper.inputText(
+        teaForm("quantity"),
+        Symbol("label") -> "在庫 (g)",
+        Symbol("type") -> "number",
+        Symbol("class") -> "form-control",
+        Symbol("required") -> true,
+        Symbol("min") -> 0
+      )
+
+      @helper.select(
+        teaForm("status"),
+        options = models.TeaStatusType.values.map(s => s.toString -> s.toString),
+        Symbol("label") -> "ステータス",
+        Symbol("class") -> "form-control",
+        Symbol("required") -> true
+      )
+
+      <div class="mb-3">
+        <label class="form-label">画像</label>
+        @tea.imageUrl.map { url =>
+          <div class="mb-2">
+            <img src="@url" class="img-thumbnail" style="max-width: 200px;" alt="@tea.name">
+          </div>
+        }
+        <input type="file" name="image" class="form-control" accept="image/*">
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">更新</button>
+        <a href="@routes.TeaController.show(tea.id.get)" class="btn btn-secondary">キャンセル</a>
+      </div>
+    }
+  </div>
+} 

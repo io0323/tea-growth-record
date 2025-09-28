@@ -1,0 +1,43 @@
+@import forms.Forms.LoginData
+@(loginForm: Form[LoginData])(implicit request: RequestHeader, messages: Messages)
+
+@main("ログイン") {
+  <div class="container">
+    <div class="panel">
+      <h1>ログイン</h1>
+
+      @request.flash.get("success").map { message =>
+        <div class="alert alert-success">@message</div>
+      }
+
+      @request.flash.get("error").map { message =>
+        <div class="alert alert-danger">@message</div>
+      }
+
+      @helper.form(routes.AuthController.loginSubmit()) {
+        @helper.CSRF.formField
+
+        @helper.inputText(
+          loginForm("email"),
+          Symbol("label") -> "メールアドレス",
+          Symbol("type") -> "email",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        @helper.inputPassword(
+          loginForm("password"),
+          Symbol("label") -> "パスワード",
+          Symbol("class") -> "form-control",
+          Symbol("required") -> true
+        )
+
+        <button type="submit" class="btn btn-primary">ログイン</button>
+      }
+
+      <hr>
+
+      <p>アカウントをお持ちでない方は<a href="@routes.AuthController.register()">こちら</a>から登録してください。</p>
+    </div>
+  </div>
+} 

@@ -1,3 +1,8 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
 name: Scala CI
 
 on:
@@ -5,6 +10,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
+permissions:
+  contents: read
 
 jobs:
   test:
@@ -19,6 +27,7 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '11'
+        cache: 'sbt'
         
     - name: Install sbt
       run: |
@@ -52,3 +61,6 @@ jobs:
       
     - name: Compile (Server project)
       run: cd server && sbt compile
+      
+    - name: Upload dependency graph
+      uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91

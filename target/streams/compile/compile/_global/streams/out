@@ -1,0 +1,186 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:27:30: reference to Forms is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0mand import play.api.data._[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.auth.login(Forms.loginForm))[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:34:5: reference to Forms is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0mand import play.api.data._[0m
+[0m[[0m[31merror[0m] [0m[0m    Forms.loginForm.bindFromRequest.fold([0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:45:46: reference to Forms is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0mand import play.api.data._[0m
+[0m[[0m[31merror[0m] [0m[0m            BadRequest(views.html.auth.login(Forms.loginForm.withError("email", "メールアドレスまたはパスワードが正しくありません。")))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:55:33: reference to Forms is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0mand import play.api.data._[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.auth.register(Forms.createUserForm))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/AuthController.scala:62:5: reference to Forms is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0mand import play.api.data._[0m
+[0m[[0m[31merror[0m] [0m[0m    Forms.createUserForm.bindFromRequest.fold([0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:123:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:123:42: missing argument list for method unapply in object CreateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(CreateTeaData.apply)(CreateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:148:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[java.math.BigDecimal], Option[java.math.BigDecimal], Option[String]) => models.Forms.UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0m required: (String, models.TeaType.TeaType, models.TeaStatus.TeaStatus, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  (String, models.TeaType.Value, models.TeaStatus.Value, java.time.LocalDate, Option[BigDecimal], Option[BigDecimal], Option[String]) => ?[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Forms.scala:148:42: missing argument list for method unapply in object UpdateTeaData[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `unapply _` or `unapply(_)` instead of `unapply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    )(UpdateTeaData.apply)(UpdateTeaData.unapply)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/controllers/TeaController.scala:184:39: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method bindFromRequest,[0m
+[0m[[0m[31merror[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[31merror[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function. [quickfixable][0m
+[0m[[0m[31merror[0m] [0m[0m      models.Forms.passwordUpdateForm.bindFromRequest.fold([0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:13:8: object MappedColumnType is not a member of package slick.lifted[0m
+[0m[[0m[31merror[0m] [0m[0mimport slick.lifted.{ProvenShape, MappedColumnType}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:48:33: not found: type MappedColumnType[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaStatusMapper: MappedColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:40:31: not found: type MappedColumnType[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaTypeMapper: MappedColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:59:34: could not find implicit value for parameter tt: slick.ast.TypedType[models.TeaType.TeaType][0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tables.scala:60:35: could not find implicit value for parameter tt: slick.ast.TypedType[models.TeaStatus.TeaStatus][0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:134:29: overloaded method unapply needs result type[0m
+[0m[[0m[31merror[0m] [0m[0m  def unapply = Tea.unapply _[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:93:8: not enough arguments for method apply: (id: Option[Long], name: String, teaType: models.TeaType.TeaType, status: models.TeaStatus.TeaStatus, purchaseDate: java.time.LocalDate, price: Option[java.math.BigDecimal], amount: Option[java.math.BigDecimal], memo: Option[String], createdAt: org.joda.time.DateTime, updatedAt: org.joda.time.DateTime, userId: Long): models.Tea in object Tea.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters id, createdAt, updatedAt.[0m
+[0m[[0m[31merror[0m] [0m[0m    Tea([0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/models/Tea.scala:119:8: not enough arguments for method apply: (id: Option[Long], name: String, teaType: models.TeaType.TeaType, status: models.TeaStatus.TeaStatus, purchaseDate: java.time.LocalDate, price: Option[java.math.BigDecimal], amount: Option[java.math.BigDecimal], memo: Option[String], createdAt: org.joda.time.DateTime, updatedAt: org.joda.time.DateTime, userId: Long): models.Tea in object Tea.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter createdAt.[0m
+[0m[[0m[31merror[0m] [0m[0m    Tea([0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:54:31: not found: type MappedColumnType[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaTypeMapper: MappedColumnType[TeaType] = MappedColumnType.base[TeaType, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:59:33: not found: type MappedColumnType[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val teaStatusMapper: MappedColumnType[TeaStatus] = MappedColumnType.base[TeaStatus, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:27:34: could not find implicit value for parameter tt: slick.ast.TypedType[models.TeaType.TeaType][0m
+[0m[[0m[31merror[0m] [0m[0m    def teaType = column[TeaType]("tea_type")[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:28:35: could not find implicit value for parameter tt: slick.ast.TypedType[models.TeaStatus.TeaStatus][0m
+[0m[[0m[31merror[0m] [0m[0m    def status = column[TeaStatus]("status")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:30:44: could not find implicit value for parameter tt: slick.ast.TypedType[Option[java.math.BigDecimal]][0m
+[0m[[0m[31merror[0m] [0m[0m    def price = column[Option[JBigDecimal]]("price")[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:31:45: could not find implicit value for parameter tt: slick.ast.TypedType[Option[java.math.BigDecimal]][0m
+[0m[[0m[31merror[0m] [0m[0m    def amount = column[Option[JBigDecimal]]("amount")[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:33:37: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m    def createdAt = column[DateTime]("created_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/TeaRepository.scala:34:37: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m    def updatedAt = column[DateTime]("updated_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:26:37: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m    def createdAt = column[DateTime]("created_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:27:37: could not find implicit value for parameter tt: slick.ast.TypedType[org.joda.time.DateTime][0m
+[0m[[0m[31merror[0m] [0m[0m    def updatedAt = column[DateTime]("updated_at")[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:48:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(row.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:87:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/repositories/UserRepository.scala:105:23: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m          id = Some(r.id),[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/TeaService.scala:62:19: value listByUserId is not a member of repositories.TeaRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    teaRepository.listByUserId(userId)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:113:43: type ProfileUpdateData is not a member of object models.Forms[0m
+[0m[[0m[31merror[0m] [0m[0m  def updateProfile(id: Long, data: Forms.ProfileUpdateData): Future[Option[User]] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:115:10: unknown parameter name: id[0m
+[0m[[0m[31merror[0m] [0m[0m      id = id,[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:116:12: unknown parameter name: name[0m
+[0m[[0m[31merror[0m] [0m[0m      name = data.name[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:114:26: too many arguments (found 2, expected 1) for method update: (user: models.User): scala.concurrent.Future[Int][0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.update([0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/services/UserService.scala:124:20: value find is not a member of repositories.UserRepository[0m
+[0m[[0m[31merror[0m] [0m[0m    userRepository.find(id)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/conf/routes:20:1: value doLogin is not a member of controllers.AuthController[0m
+[0m[[0m[31merror[0m] [0m[0mPOST    /login                      controllers.AuthController.doLogin()[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/conf/routes:23:1: value doRegister is not a member of controllers.AuthController[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean register?[0m
+[0m[[0m[31merror[0m] [0m[0mPOST    /register                   controllers.AuthController.doRegister()[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/dashboard.scala.html:43:40: value weight is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m            <td class="py-3 px-4">@tea.weight.map(_.toString + "g").getOrElse("未設定")</td>[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/editTea.scala.html:21:13: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m      @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/index.scala.html:58:25: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m                  @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/profile.scala.html:17:45: value updateProfile is not a member of controllers.ReverseTeaController[0m
+[0m[[0m[31merror[0m] [0m[0m          @helper.form(routes.TeaController.updateProfile(), Symbol("class") -> "space-y-4") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/show.scala.html:15:17: value formField is not a member of object play.filters.csrf.CSRF[0m
+[0m[[0m[31merror[0m] [0m[0m          @CSRF.formField[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/show.scala.html:53:79: value weight is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@tea.weight.map(w => s"${w}g").getOrElse("未設定")</dd>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/show.scala.html:57:79: value notes is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">@tea.notes.getOrElse("未設定")</dd>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/showTea.scala.html:8:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[Long][0m
+[0m[[0m[31merror[0m] [0m[0m required: Long[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.TeaController.edit(tea.id)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/showTea.scala.html:50:61: value weight is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m                <dd class="mt-1 text-sm text-gray-900">@tea.weight</dd>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/io/GitHub/WebProjects/Fullstack/tea-growth-record/app/views/showTea.scala.html:58:18: value notes is not a member of models.Tea[0m
+[0m[[0m[31merror[0m] [0m[0m            @tea.notes.getOrElse("メモはありません。")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m49 errors found[0m

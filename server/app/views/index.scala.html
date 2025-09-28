@@ -1,0 +1,71 @@
+@(teas: Seq[models.Tea])(implicit request: RequestHeader, messages: Messages)
+
+@main("お茶一覧") {
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h1>お茶一覧</h1>
+      </div>
+      <div class="col text-end">
+        <a href="@routes.TeaController.create()" class="btn btn-primary">
+          新しいお茶を登録
+        </a>
+      </div>
+    </div>
+
+    @request.flash.get("success").map { message =>
+      <div class="alert alert-success">@message</div>
+    }
+
+    @request.flash.get("error").map { message =>
+      <div class="alert alert-danger">@message</div>
+    }
+
+    @if(teas.isEmpty) {
+      <div class="alert alert-info">
+        まだお茶が登録されていません。新しいお茶を登録してみましょう。
+      </div>
+    } else {
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        @for(tea <- teas) {
+          <div class="col">
+            <div class="card h-100">
+              @tea.imageUrl.map { url =>
+                <img src="@url" class="card-img-top" alt="@tea.name">
+              }
+              <div class="card-body">
+                <h5 class="card-title">@tea.name</h5>
+                <p class="card-text">
+                  <small class="text-muted">@tea.teaType</small>
+                </p>
+                <p class="card-text">@tea.description</p>
+                <p class="card-text">
+                  <small class="text-muted">在庫: @tea.quantity g</small>
+                </p>
+                <div class="btn-group">
+                  <a href="@routes.TeaController.show(tea.id.get)" class="btn btn-outline-primary">
+                    詳細
+                  </a>
+                  <a href="@routes.TeaController.edit(tea.id.get)" class="btn btn-outline-secondary">
+                    編集
+                  </a>
+                  @helper.form(routes.TeaController.delete(tea.id.get)) {
+                    @helper.CSRF.formField
+                    <button type="submit" class="btn btn-outline-danger" onclick="return confirm('本当に削除しますか？');">
+                      削除
+                    </button>
+                  }
+                </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  登録日: @tea.createdAt.format("yyyy/MM/dd")
+                </small>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+} 

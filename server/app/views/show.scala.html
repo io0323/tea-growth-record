@@ -1,0 +1,72 @@
+@(tea: models.Tea)(implicit request: RequestHeader, messages: Messages)
+
+@main(tea.name) {
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col">
+        <h1>@tea.name</h1>
+      </div>
+      <div class="col text-end">
+        <div class="btn-group">
+          <a href="@routes.TeaController.edit(tea.id.get)" class="btn btn-outline-primary">
+            編集
+          </a>
+          @helper.form(routes.TeaController.delete(tea.id.get)) {
+            @helper.CSRF.formField
+            <button type="submit" class="btn btn-outline-danger" onclick="return confirm('本当に削除しますか？');">
+              削除
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+
+    @request.flash.get("success").map { message =>
+      <div class="alert alert-success">@message</div>
+    }
+
+    @request.flash.get("error").map { message =>
+      <div class="alert alert-danger">@message</div>
+    }
+
+    <div class="card mb-4">
+      <div class="row g-0">
+        <div class="col-md-4">
+          @tea.imageUrl.map { url =>
+            <img src="@url" class="img-fluid rounded-start" alt="@tea.name">
+          }
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">基本情報</h5>
+            <dl class="row">
+              <dt class="col-sm-3">種類</dt>
+              <dd class="col-sm-9">@tea.teaType</dd>
+
+              <dt class="col-sm-3">説明</dt>
+              <dd class="col-sm-9">@tea.description</dd>
+
+              <dt class="col-sm-3">在庫</dt>
+              <dd class="col-sm-9">@tea.quantity g</dd>
+
+              <dt class="col-sm-3">ステータス</dt>
+              <dd class="col-sm-9">@tea.status</dd>
+
+              <dt class="col-sm-3">登録日</dt>
+              <dd class="col-sm-9">@tea.createdAt.format("yyyy/MM/dd")</dd>
+
+              <dt class="col-sm-3">更新日</dt>
+              <dd class="col-sm-9">@tea.updatedAt.format("yyyy/MM/dd")</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="@routes.TeaController.index()" class="btn btn-secondary">
+        一覧に戻る
+      </a>
+    </div>
+  </div>
+} 

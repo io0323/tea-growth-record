@@ -1,0 +1,47 @@
+# Messages
+# ~~~~~
+
+# Global
+error.required = This field is required
+error.number = Please enter a number
+error.date = Please enter a date
+error.teaType = Please select a tea type
+error.teaStatus = Please select a tea status
+
+# Auth
+auth.login.title = Login
+auth.login.email = Email
+auth.login.password = Password
+auth.login.submit = Login
+auth.login.register = Register here
+auth.login.error = Email or password is incorrect
+
+auth.register.title = Register
+auth.register.name = Name
+auth.register.email = Email
+auth.register.password = Password
+auth.register.submit = Register
+auth.register.login = Login here
+auth.register.error = This email is already registered
+
+# Tea
+tea.index.title = Tea List
+tea.show.title = Tea Details
+tea.create.title = Create Tea
+tea.edit.title = Edit Tea
+
+tea.name = Name
+tea.teaType = Type
+tea.status = Status
+tea.purchaseDate = Purchase Date
+tea.price = Price
+tea.weight = Weight
+tea.notes = Notes
+
+tea.submit = Save
+tea.delete = Delete
+tea.back = Back
+
+tea.created = Tea has been created
+tea.updated = Tea has been updated
+tea.deleted = Tea has been deleted 
