@@ -1,0 +1,54 @@
+name: Scala CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+        
+    - name: Install sbt
+      run: |
+        curl -L -o sbt.deb https://github.com/sbt/sbt/releases/download/v1.9.7/sbt-1.9.7.deb
+        sudo dpkg -i sbt.deb
+        sudo apt-get update
+        sudo apt-get install sbt
+        
+    - name: Cache sbt dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.sbt
+          ~/.ivy2/cache
+          ~/.coursier/cache/v1
+          project/target
+          target
+        key: ${{ runner.os }}-sbt-${{ hashFiles('**/*.sbt') }}-${{ hashFiles('**/project/build.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-sbt-${{ hashFiles('**/*.sbt') }}-
+          ${{ runner.os }}-sbt-
+          
+    - name: Run tests (Root project)
+      run: sbt test
+      
+    - name: Run tests (Server project)
+      run: cd server && sbt test
+      
+    - name: Compile (Root project)
+      run: sbt compile
+      
+    - name: Compile (Server project)
+      run: cd server && sbt compile
