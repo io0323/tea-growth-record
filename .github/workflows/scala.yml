@@ -32,7 +32,17 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install npm
+      run: npm install -g npm@latest
+        
+    - name: Clear caches
+      run: |
+        npm cache clean --force
+        rm -rf ~/.sbt
+        rm -rf ~/.ivy2/cache
         
     - name: Install sbt
       run: |

@@ -34,6 +34,13 @@ lazy val root = (project in file("."))
 
 scalaVersion := "2.13.12"
 
+// Resolvers for dependency resolution
+resolvers ++= Seq(
+  "Typesafe Releases" at "https://repo.typesafe.com/typesafe/releases/",
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
+  "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
+)
+
 // Server configuration
 PlayKeys.devSettings += "play.server.http.port" -> "9000"
 
