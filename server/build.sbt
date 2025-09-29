@@ -33,7 +33,7 @@ resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releas
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
-val playVersion = "2.8.19"
+val playVersion = "2.8.20"
 
 libraryDependencies ++= Seq(
   guice,

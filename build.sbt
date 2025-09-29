@@ -3,7 +3,7 @@ organization := "com.example"
 
 version := "1.0-SNAPSHOT"
 
-val playVersion = "2.8.19"
+val playVersion = "2.8.20"
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
