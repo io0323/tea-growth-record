@@ -13,7 +13,7 @@ lazy val root = (project in file("."))
       "com.typesafe.play" %% "play-slick" % "5.2.0",
       "com.typesafe.play" %% "play-slick-evolutions" % "5.2.0",
       "com.typesafe.play" %% "play-scala-csrf" % playVersion,
-      "com.typesafe.play" %% "play-scala-csrf-bundle" % playVersion,
+      "com.typesafe.play" %% "play-filters-helpers" % playVersion,
       "mysql" % "mysql-connector-java" % "8.0.33",
       "org.joda" % "joda-convert" % "2.0.2",
       "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
@@ -22,8 +22,7 @@ lazy val root = (project in file("."))
       "com.typesafe.play" %% "play-ws" % playVersion
     ),
     libraryDependencies ++= Seq(
-      "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test,
-      "com.typesafe.play" %% "play-scala-csrf-bundle" % playVersion % Test
+      "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test
     ),
     scalacOptions ++= Seq(
       "-feature",
