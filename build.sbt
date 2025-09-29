@@ -12,7 +12,6 @@ lazy val root = (project in file("."))
       guice,
       "com.typesafe.play" %% "play-slick" % "5.2.0",
       "com.typesafe.play" %% "play-slick-evolutions" % "5.2.0",
-      "com.typesafe.play" %% "play-scala-csrf" % playVersion,
       "com.typesafe.play" %% "play-filters-helpers" % playVersion,
       "mysql" % "mysql-connector-java" % "8.0.33",
       "org.joda" % "joda-convert" % "2.0.2",
@@ -49,8 +48,6 @@ TwirlKeys.templateImports ++= Seq(
   "forms._",
   "play.api.i18n.Messages",
   "play.api.mvc.RequestHeader",
-  "play.filters.csrf.CSRF",
-  "play.filters.csrf.CSRF.Token",
   "java.time.format.DateTimeFormatter"
 )
 
