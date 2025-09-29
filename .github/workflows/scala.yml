@@ -29,6 +29,11 @@ jobs:
         java-version: '11'
         cache: 'sbt'
         
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
     - name: Install sbt
       run: |
         echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | sudo tee /etc/apt/sources.list.d/sbt.list

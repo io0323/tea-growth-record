@@ -19,7 +19,6 @@ lazy val root = (project in file("."))
       "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
       "com.typesafe.play" %% "play-json-joda" % playVersion,
       "org.mindrot" % "jbcrypt" % "0.4",
-      "com.typesafe.play" %% "play-filters-helpers" % playVersion,
       "com.typesafe.play" %% "play-ws" % playVersion
     ),
     libraryDependencies ++= Seq(
