@@ -35,7 +35,13 @@ jobs:
         node-version: '18'
         cache: 'npm'
         
-    - name: Install npm
+    - name: Verify Node.js and npm
+      run: |
+        node --version
+        npm --version
+        which npm
+        
+    - name: Install npm (explicit)
       run: |
         npm install -g npm@9.8.1
         npm --version
@@ -68,16 +74,24 @@ jobs:
           ${{ runner.os }}-sbt-
           
     - name: Run tests (Root project)
-      run: sbt test
-      
+      run: |
+        export PATH="/usr/local/bin:$PATH"
+        sbt test
+        
     - name: Run tests (Server project)
-      run: cd server && sbt test
-      
+      run: |
+        export PATH="/usr/local/bin:$PATH"
+        cd server && sbt test
+        
     - name: Compile (Root project)
-      run: sbt compile
-      
+      run: |
+        export PATH="/usr/local/bin:$PATH"
+        sbt compile
+        
     - name: Compile (Server project)
-      run: cd server && sbt compile
+      run: |
+        export PATH="/usr/local/bin:$PATH"
+        cd server && sbt compile
       
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
