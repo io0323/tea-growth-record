@@ -29,9 +29,20 @@ jobs:
         echo "=== Project root contents ==="
         ls -la
         echo "=== package-lock.json status ==="
-        ls -la package-lock.json || echo "package-lock.json not found!"
+        if [ -f "package-lock.json" ]; then
+          echo "✅ package-lock.json exists"
+          ls -la package-lock.json
+          echo "File size: $(wc -c < package-lock.json) bytes"
+        else
+          echo "❌ package-lock.json not found!"
+        fi
         echo "=== package.json status ==="
-        ls -la package.json || echo "package.json not found!"
+        if [ -f "package.json" ]; then
+          echo "✅ package.json exists"
+          ls -la package.json
+        else
+          echo "❌ package.json not found!"
+        fi
       
     - name: Clear all caches first
       run: |
@@ -64,11 +75,17 @@ jobs:
         
     - name: Install npm dependencies
       run: |
-        # Ensure we're in the project root and package-lock.json exists
+        # Ensure we're in the project root
         pwd
-        ls -la package-lock.json
-        echo "Installing dependencies using package-lock.json..."
-        npm ci
+        echo "=== Checking package-lock.json ==="
+        if [ -f "package-lock.json" ]; then
+          echo "package-lock.json exists, using npm ci"
+          ls -la package-lock.json
+          npm ci
+        else
+          echo "package-lock.json not found, generating it with npm install"
+          npm install
+        fi
         echo "Dependencies installed successfully"
         
     - name: Setup sbt
