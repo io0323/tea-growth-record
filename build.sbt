@@ -3,7 +3,7 @@ organization := "com.example"
 
 version := "1.0-SNAPSHOT"
 
-val playVersion = "2.8.20"
+val playVersion = "2.8.2"
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
@@ -16,7 +16,7 @@ lazy val root = (project in file("."))
       "mysql" % "mysql-connector-java" % "8.0.33",
       "org.joda" % "joda-convert" % "2.0.2",
       "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
-      "com.typesafe.play" %% "play-json-joda" % playVersion,
+      "com.typesafe.play" %% "play-json-joda" % "2.8.2",
       "org.mindrot" % "jbcrypt" % "0.4",
       "com.typesafe.play" %% "play-ws" % playVersion
     ),
@@ -34,9 +34,9 @@ scalaVersion := "2.13.12"
 
 // Resolvers for dependency resolution
 resolvers ++= Seq(
+  "Maven Central" at "https://repo1.maven.org/maven2/",
   "Typesafe Releases" at "https://repo.typesafe.com/typesafe/releases/",
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
-  "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 )
 
 // Server configuration
