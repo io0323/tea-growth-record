@@ -24,8 +24,7 @@ jobs:
       
     - name: Clear all caches first
       run: |
-        rm -rf node_modules package-lock.json
-        rm -rf ~/.npm ~/.node-gyp
+        rm -rf node_modules
       
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -39,7 +38,7 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-        cache-dependency-path: '**/package-lock.json'
+        cache-dependency-path: 'package-lock.json'
         
     - name: Verify Node.js and npm installation
       run: |
@@ -52,17 +51,6 @@ jobs:
         npm --version
         npm config get registry
         
-        # Clean npm cache
-        npm cache clean --force
-        
-    - name: Cache npm dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-          
     - name: Install npm dependencies
       run: |
         # Install dependencies using package-lock.json
