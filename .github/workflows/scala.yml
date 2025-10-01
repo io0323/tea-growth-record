@@ -22,6 +22,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
+    - name: Verify project structure
+      run: |
+        echo "=== Current directory ==="
+        pwd
+        echo "=== Project root contents ==="
+        ls -la
+        echo "=== package-lock.json status ==="
+        ls -la package-lock.json || echo "package-lock.json not found!"
+        echo "=== package.json status ==="
+        ls -la package.json || echo "package.json not found!"
+      
     - name: Clear all caches first
       run: |
         rm -rf node_modules
@@ -53,7 +64,10 @@ jobs:
         
     - name: Install npm dependencies
       run: |
-        # Install dependencies using package-lock.json
+        # Ensure we're in the project root and package-lock.json exists
+        pwd
+        ls -la package-lock.json
+        echo "Installing dependencies using package-lock.json..."
         npm ci
         echo "Dependencies installed successfully"
         
