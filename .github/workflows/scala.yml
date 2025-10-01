@@ -59,6 +59,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+        npm-version: '10.8.2'
         cache: 'npm'
         cache-dependency-path: 'package-lock.json'
         
@@ -83,7 +84,7 @@ jobs:
         # Method 1: Install npm via Node.js (if npm command exists but is broken)
         if command -v npm &> /dev/null; then
           echo "Attempting to reinstall npm via npm..."
-          npm install -g npm@latest 2>/dev/null || echo "npm reinstall failed"
+          npm install -g npm@10.8.2 2>/dev/null || echo "npm reinstall failed"
         fi
         
         # Method 2: Install npm via curl (most reliable)
@@ -124,7 +125,14 @@ jobs:
           npm_version=$(npm --version 2>/dev/null || echo "undefined")
           if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
             echo "❌ npm installation failed completely"
-            exit 1
+            echo "Trying alternative installation method..."
+            sudo apt-get update
+            sudo apt-get install -y npm
+            npm_version=$(npm --version 2>/dev/null || echo "undefined")
+            if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
+              echo "❌ All npm installation methods failed"
+              exit 1
+            fi
           fi
         fi
         
