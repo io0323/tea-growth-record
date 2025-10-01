@@ -105,36 +105,20 @@ jobs:
           ${{ runner.os }}-sbt-${{ hashFiles('**/*.sbt') }}-
           ${{ runner.os }}-sbt-
           
-    - name: Force clean all SBT caches
-      run: |
-        # Remove all possible SBT cache locations
-        rm -rf ~/.sbt
-        rm -rf ~/.ivy2
-        rm -rf ~/.coursier
-        rm -rf ~/.cache/coursier
-        rm -rf project/target
-        rm -rf target
-        rm -rf server/project/target
-        rm -rf server/target
-        
     - name: Clean and update dependencies
       run: |
-        # Force update dependencies
-        sbt clean
-        sbt reload
-        sbt update
+        # Clean and update dependencies
+        sbt clean update
         
         # Clean server project
-        cd server && sbt clean
-        cd server && sbt reload
-        cd server && sbt update
+        cd server && sbt clean update
         
         # Verify dependencies - show actual resolved versions
         echo "=== Root project dependencies ==="
-        sbt "show libraryDependencies" | grep -i play-json-joda || echo "No play-json-joda found in root"
+        sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found in root"
         
         echo "=== Server project dependencies ==="
-        cd server && sbt "show libraryDependencies" | grep -i play-json-joda || echo "No play-json-joda found in server"
+        cd server && sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found in server"
         
     - name: Compile (Root project)
       run: sbt compile
