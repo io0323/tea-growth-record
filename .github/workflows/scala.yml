@@ -47,16 +47,27 @@ jobs:
         
     - name: Install npm (latest) and verify
       run: |
-        curl -L https://www.npmjs.com/install.sh | sh
-        npm install -g npm@latest
+        # Remove any existing npm installation
+        rm -rf /usr/local/bin/npm /usr/local/bin/npx
+        rm -rf ~/.npm ~/.node-gyp
+        
+        # Install npm using Node.js built-in method
+        curl -fsSL https://raw.githubusercontent.com/npm/cli/latest/scripts/install.sh | sh
+        
+        # Verify installation
         npm --version
         node --version
-        npm cache clean --force
-        rm -rf node_modules
-        rm -f package-lock.json
+        
+        # Clean and reinstall npm
+        npm install -g npm@latest
         npm --version
+        
+        # Final verification
         echo "NPM version check: $(npm --version)"
         echo "Node version check: $(node --version)"
+        
+        # Clean npm cache
+        npm cache clean --force
         
     - name: Setup sbt
       uses: sbt/setup-sbt@v1
@@ -77,12 +88,25 @@ jobs:
           
     - name: Clean and update dependencies
       run: |
+        # Force clean all SBT caches and artifacts
+        rm -rf ~/.sbt/1.0/target
+        rm -rf ~/.sbt/0.13/target
+        rm -rf ~/.ivy2/cache
+        rm -rf ~/.coursier/cache
+        
+        # Clean and reload projects
         sbt clean
         sbt reload
         sbt update
+        
+        # Clean server project
         cd server && sbt clean
         cd server && sbt reload
         cd server && sbt update
+        
+        # Verify dependencies
+        sbt "show libraryDependencies" | grep play-json-joda
+        cd server && sbt "show libraryDependencies" | grep play-json-joda
         
     - name: Compile (Root project)
       run: sbt compile
