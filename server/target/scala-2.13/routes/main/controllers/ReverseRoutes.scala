@@ -1,5 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:conf/routes
+// @SOURCE:/Users/io/Projects/GitHub/tea-growth-record/server/conf/routes
+// @DATE:Wed Oct 01 20:29:17 JST 2025
 
 import play.api.mvc.Call
 
@@ -44,7 +45,7 @@ package controllers {
     }
   
     // @LINE:23
-    def create: Call = {
+    def create(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/teas")
     }
@@ -62,7 +63,7 @@ package controllers {
     }
   
     // @LINE:21
-    def index: Call = {
+    def index(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/teas")
     }

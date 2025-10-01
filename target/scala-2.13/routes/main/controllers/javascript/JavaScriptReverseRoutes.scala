@@ -1,5 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:conf/routes
+// @SOURCE:/Users/io/Projects/GitHub/tea-growth-record/conf/routes
+// @DATE:Wed Oct 01 20:12:34 JST 2025
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +12,7 @@ import _root_.models.TeaStatus
 // @LINE:7
 package controllers.javascript {
 
-  // @LINE:30
+  // @LINE:7
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +20,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:30
+    // @LINE:7
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -31,7 +32,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:33
+  // @LINE:34
   class ReverseErrorController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -39,7 +40,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:33
+    // @LINE:34
     def forbidden: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ErrorController.forbidden",
       """
@@ -51,7 +52,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:10
+  // @LINE:20
   class ReverseTeaController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -59,17 +60,17 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
+    // @LINE:26
     def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.delete",
       """
         function(id0) {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "teas/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0)) + "/delete"})
+          return _wA({method:"DELETE", url:"""" + _prefix + { _defaultPrefix } + """" + "teas/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
   
-    // @LINE:13
+    // @LINE:23
     def show: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.show",
       """
@@ -79,7 +80,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:21
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.create",
       """
@@ -89,7 +90,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:24
     def edit: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.edit",
       """
@@ -99,27 +100,27 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:29
+    def profile: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TeaController.profile",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profile"})
+        }
+      """
+    )
+  
+    // @LINE:25
     def update: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.update",
       """
         function(id0) {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "teas/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+          return _wA({method:"PUT", url:"""" + _prefix + { _defaultPrefix } + """" + "teas/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
   
-    // @LINE:26
-    def password: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.TeaController.password",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "password"})
-        }
-      """
-    )
-  
-    // @LINE:12
+    // @LINE:22
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.save",
       """
@@ -129,17 +130,27 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:31
     def updatePassword: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.updatePassword",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "password"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "profile/password"})
         }
       """
     )
   
-    // @LINE:10
+    // @LINE:30
+    def updateProfile: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TeaController.updateProfile",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "profile"})
+        }
+      """
+    )
+  
+    // @LINE:20
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TeaController.index",
       """
@@ -151,7 +162,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:7
+  // @LINE:10
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -159,7 +170,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:10
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
@@ -171,7 +182,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:19
+  // @LINE:13
   class ReverseAuthController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -179,19 +190,9 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
-    def doLogin: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AuthController.doLogin",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def doRegister: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AuthController.doRegister",
+    // @LINE:16
+    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AuthController.create",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
@@ -199,7 +200,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:17
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.logout",
       """
@@ -209,7 +210,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:22
+    // @LINE:15
     def register: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.register",
       """
@@ -219,7 +220,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:14
+    def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AuthController.authenticate",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
+    // @LINE:13
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.login",
       """

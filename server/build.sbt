@@ -55,8 +55,8 @@ ThisBuild / libraryDependencySchemes ++= Seq(
 PlayKeys.playDefaultPort := 9000
 
 // アセットの設定
-Assets / pipelineStages := Seq(digest, gzip)
-pipelineStages := Seq(digest, gzip)
+Assets / pipelineStages := Seq(digest)
+pipelineStages := Seq(digest)
 
 // テスト設定
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oD")

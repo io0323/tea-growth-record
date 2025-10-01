@@ -1,5 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:conf/routes
+// @SOURCE:/Users/io/Projects/GitHub/tea-growth-record/server/conf/routes
+// @DATE:Wed Oct 01 20:29:17 JST 2025
 
 
 package router {

@@ -3,57 +3,10 @@ organization := "com.example"
 
 version := "1.0-SNAPSHOT"
 
-val playVersion = "2.8.0"
-
 lazy val root = (project in file("."))
+  .aggregate(server)
+
+lazy val server = (project in file("server"))
   .enablePlugins(PlayScala)
-  .settings(
-    libraryDependencies ++= Seq(
-      guice,
-      "com.typesafe.play" %% "play-slick" % "5.2.0",
-      "com.typesafe.play" %% "play-slick-evolutions" % "5.2.0",
-      "mysql" % "mysql-connector-java" % "8.0.33",
-      "org.joda" % "joda-convert" % "2.0.2",
-      "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
-      "com.typesafe.play" %% "play-json-joda" % "2.8.0",
-      "org.mindrot" % "jbcrypt" % "0.4",
-      "com.typesafe.play" %% "play-ws" % playVersion
-    ),
-    libraryDependencies ++= Seq(
-      "org.scalatestplus.play" %% "scalatestplus-play" % "6.0.0-RC2" % Test
-    ),
-    scalacOptions ++= Seq(
-      "-feature",
-      "-deprecation",
-      "-Xfatal-warnings"
-    ),
-    evictionErrorLevel := Level.Warn,
-    libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always
-  )
 
-scalaVersion := "2.13.12"
-
-// Resolvers for dependency resolution
-resolvers ++= Seq(
-  "Maven Central" at "https://repo1.maven.org/maven2/",
-  "Typesafe Releases" at "https://repo.typesafe.com/typesafe/releases/",
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
-)
-
-// Server configuration
-PlayKeys.devSettings += "play.server.http.port" -> "9000"
-
-// Adds additional packages into Twirl
-TwirlKeys.templateImports ++= Seq(
-  "models._",
-  "forms._",
-  "play.api.i18n.Messages",
-  "play.api.mvc.RequestHeader",
-  "java.time.format.DateTimeFormatter"
-)
-
-// Adds additional packages into conf/routes
-play.sbt.routes.RoutesKeys.routesImport ++= Seq(
-  "models.TeaType",
-  "models.TeaStatus"
-) 
+scalaVersion := "2.13.12" 
