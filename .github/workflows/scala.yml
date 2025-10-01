@@ -59,54 +59,56 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        npm-version: '10.8.2'
         cache: 'npm'
         cache-dependency-path: 'package-lock.json'
         
+    - name: Install npm explicitly
+      run: |
+        echo "Installing npm explicitly..."
+        # Method 1: Install npm via Node.js
+        npm install -g npm@latest
+        
+        # Method 2: If npm is still not working, install via curl
+        if ! command -v npm &> /dev/null || [ "$(npm --version)" = "undefined" ]; then
+          echo "npm not found or undefined, installing via curl..."
+          curl -L https://www.npmjs.com/install.sh | sh
+        fi
+        
+        # Verify npm installation
+        echo "NPM version after installation: $(npm --version)"
+        echo "NPM location: $(which npm)"
+        
+        # Test npm functionality
+        npm config get registry
+        
     - name: Verify Node.js and npm installation
       run: |
+        echo "=== Final Verification ==="
         echo "Node.js version: $(node --version)"
         echo "NPM version: $(npm --version)"
         echo "NPM location: $(which npm)"
-        echo "NPM config: $(npm config list)"
         
-        # Ensure npm is working
-        npm --version
-        npm config get registry
-        
-        # Verify npm is properly installed
+        # Final check - ensure npm is working
         if ! command -v npm &> /dev/null; then
           echo "❌ npm command not found"
           exit 1
         fi
         
-        # Check npm version is not undefined
         npm_version=$(npm --version)
         if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
-          echo "❌ npm version is undefined or empty"
-          echo "Attempting to reinstall npm..."
-          npm install -g npm@10.8.2
-          echo "NPM version after reinstall: $(npm --version)"
-        else
-          echo "✅ npm version is valid: $npm_version"
+          echo "❌ npm version is still undefined"
+          exit 1
         fi
         
-        # Final verification - test npm functionality
-        echo "Testing npm functionality..."
+        echo "✅ npm is working correctly with version: $npm_version"
+        
+        # Test npm functionality
         npm config get registry > /dev/null
         if [ $? -eq 0 ]; then
-          echo "✅ npm is working correctly"
+          echo "✅ npm functionality test passed"
         else
-          echo "❌ npm is not working correctly"
-          echo "Attempting final npm reinstall..."
-          npm install -g npm@10.8.2
-          npm config get registry > /dev/null
-          if [ $? -eq 0 ]; then
-            echo "✅ npm is now working correctly"
-          else
-            echo "❌ npm is still not working - failing build"
-            exit 1
-          fi
+          echo "❌ npm functionality test failed"
+          exit 1
         fi
         
     - name: Install npm dependencies
