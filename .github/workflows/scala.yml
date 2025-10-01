@@ -39,6 +39,7 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
+        cache-dependency-path: 'package-lock.json'
         
     - name: Verify Node.js and npm installation
       run: |
@@ -53,6 +54,12 @@ jobs:
         
         # Clean npm cache
         npm cache clean --force
+        
+    - name: Install npm dependencies
+      run: |
+        # Install dependencies using package-lock.json
+        npm ci
+        echo "Dependencies installed successfully"
         
     - name: Setup sbt
       uses: sbt/setup-sbt@v1
