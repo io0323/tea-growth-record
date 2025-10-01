@@ -55,106 +55,17 @@ jobs:
         java-version: '11'
         cache: 'sbt'
         
-    - name: Install Node.js and npm manually
+    - name: Skip npm installation (Web assets disabled)
       run: |
-        echo "=== Installing Node.js and npm manually ==="
+        echo "=== Skipping npm installation ==="
+        echo "Web assets processing has been disabled in build.sbt"
+        echo "No npm installation required for this build"
         
-        # Remove any existing Node.js installations
-        sudo rm -rf /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npx
-        sudo rm -rf /usr/bin/node /usr/bin/npm /usr/bin/npx
-        
-        # Download and install Node.js 20.x (LTS)
-        echo "Downloading Node.js 20.x..."
-        curl -fsSL https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-x64.tar.xz -o node.tar.xz
-        
-        # Extract Node.js
-        echo "Extracting Node.js..."
-        sudo tar -xJf node.tar.xz -C /usr/local --strip-components=1
-        
-        # Create symlinks
-        sudo ln -sf /usr/local/bin/node /usr/bin/node
-        sudo ln -sf /usr/local/bin/npm /usr/bin/npm
-        sudo ln -sf /usr/local/bin/npx /usr/bin/npx
-        
-        # Verify installation
-        echo "=== Verification ==="
-        echo "Node.js version: $(node --version)"
-        echo "NPM version: $(npm --version)"
-        echo "NPM location: $(which npm)"
-        
-        # Test npm functionality
-        npm config get registry
-        
-        # Clean up
-        rm -f node.tar.xz
-        
-    - name: Verify and fix npm installation
+    - name: Skip npm dependencies (Web assets disabled)
       run: |
-        echo "=== Verifying npm installation ==="
-        
-        # Check if npm exists and is working
-        if command -v npm &> /dev/null; then
-          npm_version=$(npm --version 2>/dev/null || echo "undefined")
-          echo "Current npm version: $npm_version"
-          
-          if [ "$npm_version" != "undefined" ] && [ -n "$npm_version" ]; then
-            echo "✅ npm is working with version: $npm_version"
-            npm config get registry
-            exit 0
-          fi
-        fi
-        
-        echo "❌ npm is not working properly, fixing..."
-        
-        # Method 1: Install npm via curl (most reliable)
-        echo "Installing npm via curl..."
-        curl -L https://www.npmjs.com/install.sh | sh
-        
-        # Method 2: Install npm via apt (Ubuntu/Debian)
-        echo "Installing npm via apt..."
-        sudo apt-get update
-        sudo apt-get install -y npm
-        
-        # Method 3: Download npm directly
-        echo "Downloading npm directly..."
-        curl -L https://registry.npmjs.org/npm/-/npm-10.2.4.tgz | tar -xz
-        sudo cp -r npm-10.2.4/* /usr/local/
-        
-        # Verify installation
-        echo "=== Final Verification ==="
-        echo "NPM version: $(npm --version)"
-        echo "NPM location: $(which npm)"
-        
-        # Test npm functionality
-        npm config get registry
-        
-    - name: Final verification
-      run: |
-        echo "=== Final Verification ==="
-        echo "Node.js version: $(node --version)"
-        echo "NPM version: $(npm --version)"
-        echo "NPM location: $(which npm)"
-        
-        # Test npm functionality
-        npm config get registry
-        npm help > /dev/null
-        
-        echo "✅ Node.js and npm are working correctly"
-        
-    - name: Install npm dependencies
-      run: |
-        # Ensure we're in the project root
-        pwd
-        echo "=== Checking package-lock.json ==="
-        if [ -f "package-lock.json" ]; then
-          echo "package-lock.json exists, using npm ci"
-          ls -la package-lock.json
-          npm ci
-        else
-          echo "package-lock.json not found, generating it with npm install"
-          npm install
-        fi
-        echo "Dependencies installed successfully"
+        echo "=== Skipping npm dependencies ==="
+        echo "Web assets processing has been disabled in build.sbt"
+        echo "No npm dependencies required for this build"
         
     - name: Setup sbt
       uses: sbt/setup-sbt@v1

@@ -46,6 +46,10 @@ lazy val root = (project in file("."))
     PlayKeys.playDefaultPort := 9000,
     Assets / pipelineStages := Seq(digest),
     pipelineStages := Seq(digest),
+    // Disable Web assets processing to avoid npm dependency issues
+    Assets / jseNpmNodeModules := Nil,
+    Web-assets / jseNpmNodeModules := Nil,
+    Web-assets-test / jseNpmNodeModules := Nil,
     testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oD"),
     fork := true,
     connectInput := true,
