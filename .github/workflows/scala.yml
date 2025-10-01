@@ -59,7 +59,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        npm-version: 'latest'
+        npm-version: '10.8.2'
         cache: 'npm'
         cache-dependency-path: 'package-lock.json'
         
@@ -85,10 +85,28 @@ jobs:
         if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
           echo "❌ npm version is undefined or empty"
           echo "Attempting to reinstall npm..."
-          npm install -g npm@latest
+          npm install -g npm@10.8.2
           echo "NPM version after reinstall: $(npm --version)"
         else
           echo "✅ npm version is valid: $npm_version"
+        fi
+        
+        # Final verification - test npm functionality
+        echo "Testing npm functionality..."
+        npm config get registry > /dev/null
+        if [ $? -eq 0 ]; then
+          echo "✅ npm is working correctly"
+        else
+          echo "❌ npm is not working correctly"
+          echo "Attempting final npm reinstall..."
+          npm install -g npm@10.8.2
+          npm config get registry > /dev/null
+          if [ $? -eq 0 ]; then
+            echo "✅ npm is now working correctly"
+          else
+            echo "❌ npm is still not working - failing build"
+            exit 1
+          fi
         fi
         
     - name: Install npm dependencies
