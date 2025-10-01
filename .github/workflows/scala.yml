@@ -55,7 +55,7 @@ jobs:
         java-version: '11'
         cache: 'sbt'
         
-    - name: Set up Node.js
+    - name: Set up Node.js with npm
       uses: actions/setup-node@v4
       with:
         node-version: '20'
@@ -64,18 +64,40 @@ jobs:
         
     - name: Install npm explicitly
       run: |
-        echo "Installing npm explicitly..."
-        # Method 1: Install npm via Node.js
-        npm install -g npm@latest
+        echo "=== Installing npm explicitly ==="
         
-        # Method 2: If npm is still not working, install via curl
-        if ! command -v npm &> /dev/null || [ "$(npm --version)" = "undefined" ]; then
-          echo "npm not found or undefined, installing via curl..."
-          curl -L https://www.npmjs.com/install.sh | sh
+        # Check if npm exists and is working
+        if command -v npm &> /dev/null; then
+          npm_version=$(npm --version 2>/dev/null || echo "undefined")
+          echo "Current npm version: $npm_version"
+          
+          if [ "$npm_version" != "undefined" ] && [ -n "$npm_version" ]; then
+            echo "✅ npm is already working with version: $npm_version"
+            npm config get registry
+            exit 0
+          fi
         fi
         
-        # Verify npm installation
-        echo "NPM version after installation: $(npm --version)"
+        echo "❌ npm is not working properly, installing..."
+        
+        # Method 1: Install npm via Node.js (if npm command exists but is broken)
+        if command -v npm &> /dev/null; then
+          echo "Attempting to reinstall npm via npm..."
+          npm install -g npm@latest 2>/dev/null || echo "npm reinstall failed"
+        fi
+        
+        # Method 2: Install npm via curl (most reliable)
+        echo "Installing npm via curl..."
+        curl -L https://www.npmjs.com/install.sh | sh
+        
+        # Method 3: Install npm via apt (Ubuntu/Debian)
+        echo "Installing npm via apt..."
+        sudo apt-get update
+        sudo apt-get install -y npm
+        
+        # Verify installation
+        echo "=== Verification ==="
+        echo "NPM version: $(npm --version)"
         echo "NPM location: $(which npm)"
         
         # Test npm functionality
@@ -94,10 +116,16 @@ jobs:
           exit 1
         fi
         
-        npm_version=$(npm --version)
+        npm_version=$(npm --version 2>/dev/null || echo "undefined")
         if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
           echo "❌ npm version is still undefined"
-          exit 1
+          echo "Attempting final npm installation..."
+          curl -L https://www.npmjs.com/install.sh | sh
+          npm_version=$(npm --version 2>/dev/null || echo "undefined")
+          if [ "$npm_version" = "undefined" ] || [ -z "$npm_version" ]; then
+            echo "❌ npm installation failed completely"
+            exit 1
+          fi
         fi
         
         echo "✅ npm is working correctly with version: $npm_version"
@@ -108,6 +136,15 @@ jobs:
           echo "✅ npm functionality test passed"
         else
           echo "❌ npm functionality test failed"
+          exit 1
+        fi
+        
+        # Additional test - try to run npm help
+        npm help > /dev/null
+        if [ $? -eq 0 ]; then
+          echo "✅ npm help test passed"
+        else
+          echo "❌ npm help test failed"
           exit 1
         fi
         
