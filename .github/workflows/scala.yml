@@ -24,14 +24,8 @@ jobs:
       
     - name: Clear all caches first
       run: |
-        rm -rf ~/.sbt ~/.ivy2 ~/.cache/coursier
-        rm -rf project/target target
-        rm -rf server/project/target server/target
-        rm -rf server/target/streams server/target/scala-2.13
         rm -rf node_modules package-lock.json
         rm -rf ~/.npm ~/.node-gyp
-        find . -name "target" -type d -exec rm -rf {} + 2>/dev/null || true
-        find . -name ".sbt" -type d -exec rm -rf {} + 2>/dev/null || true
       
     - name: Setup Java
       uses: actions/setup-java@v4
@@ -44,27 +38,18 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+        cache: 'npm'
         
-    - name: Install npm (latest) and verify
+    - name: Verify Node.js and npm installation
       run: |
-        # Remove any existing npm installation
-        rm -rf /usr/local/bin/npm /usr/local/bin/npx
-        rm -rf ~/.npm ~/.node-gyp
+        echo "Node.js version: $(node --version)"
+        echo "NPM version: $(npm --version)"
+        echo "NPM location: $(which npm)"
+        echo "NPM config: $(npm config list)"
         
-        # Install npm using Node.js built-in method
-        curl -fsSL https://raw.githubusercontent.com/npm/cli/latest/scripts/install.sh | sh
-        
-        # Verify installation
+        # Ensure npm is working
         npm --version
-        node --version
-        
-        # Clean and reinstall npm
-        npm install -g npm@latest
-        npm --version
-        
-        # Final verification
-        echo "NPM version check: $(npm --version)"
-        echo "Node version check: $(node --version)"
+        npm config get registry
         
         # Clean npm cache
         npm cache clean --force
@@ -86,15 +71,21 @@ jobs:
           ${{ runner.os }}-sbt-${{ hashFiles('**/*.sbt') }}-
           ${{ runner.os }}-sbt-
           
+    - name: Force clean all SBT caches
+      run: |
+        # Remove all possible SBT cache locations
+        rm -rf ~/.sbt
+        rm -rf ~/.ivy2
+        rm -rf ~/.coursier
+        rm -rf ~/.cache/coursier
+        rm -rf project/target
+        rm -rf target
+        rm -rf server/project/target
+        rm -rf server/target
+        
     - name: Clean and update dependencies
       run: |
-        # Force clean all SBT caches and artifacts
-        rm -rf ~/.sbt/1.0/target
-        rm -rf ~/.sbt/0.13/target
-        rm -rf ~/.ivy2/cache
-        rm -rf ~/.coursier/cache
-        
-        # Clean and reload projects
+        # Force update dependencies
         sbt clean
         sbt reload
         sbt update
@@ -104,9 +95,12 @@ jobs:
         cd server && sbt reload
         cd server && sbt update
         
-        # Verify dependencies
-        sbt "show libraryDependencies" | grep play-json-joda
-        cd server && sbt "show libraryDependencies" | grep play-json-joda
+        # Verify dependencies - show actual resolved versions
+        echo "=== Root project dependencies ==="
+        sbt "show libraryDependencies" | grep -i play-json-joda || echo "No play-json-joda found in root"
+        
+        echo "=== Server project dependencies ==="
+        cd server && sbt "show libraryDependencies" | grep -i play-json-joda || echo "No play-json-joda found in server"
         
     - name: Compile (Root project)
       run: sbt compile
