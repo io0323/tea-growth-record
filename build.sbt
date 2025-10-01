@@ -3,7 +3,7 @@ organization := "com.example"
 
 version := "1.0-SNAPSHOT"
 
-val playVersion = "2.8.2"
+val playVersion = "2.8.0"
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
@@ -12,11 +12,10 @@ lazy val root = (project in file("."))
       guice,
       "com.typesafe.play" %% "play-slick" % "5.2.0",
       "com.typesafe.play" %% "play-slick-evolutions" % "5.2.0",
-      "com.typesafe.play" %% "play-filters-helpers" % playVersion,
       "mysql" % "mysql-connector-java" % "8.0.33",
       "org.joda" % "joda-convert" % "2.0.2",
       "net.logstash.logback" % "logstash-logback-encoder" % "7.4",
-      "com.typesafe.play" %% "play-json-joda" % "2.8.2",
+      "com.typesafe.play" %% "play-json-joda" % "2.8.0",
       "org.mindrot" % "jbcrypt" % "0.4",
       "com.typesafe.play" %% "play-ws" % playVersion
     ),
@@ -27,7 +26,9 @@ lazy val root = (project in file("."))
       "-feature",
       "-deprecation",
       "-Xfatal-warnings"
-    )
+    ),
+    evictionErrorLevel := Level.Warn,
+    libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always
   )
 
 scalaVersion := "2.13.12"
