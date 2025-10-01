@@ -110,27 +110,15 @@ jobs:
         # Clean and update dependencies
         sbt clean update
         
-        # Clean server project
-        cd server && sbt clean update
-        
         # Verify dependencies - show actual resolved versions
-        echo "=== Root project dependencies ==="
-        sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found in root"
+        echo "=== Project dependencies ==="
+        sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found"
         
-        echo "=== Server project dependencies ==="
-        cd server && sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found in server"
-        
-    - name: Compile (Root project)
+    - name: Compile project
       run: sbt compile
         
-    - name: Compile (Server project)
-      run: cd server && sbt compile
-        
-    - name: Run tests (Root project)
+    - name: Run tests
       run: sbt test
-        
-    - name: Run tests (Server project)
-      run: cd server && sbt test
       
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
