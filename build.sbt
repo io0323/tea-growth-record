@@ -80,6 +80,21 @@ lazy val root = (project in file("."))
     // Disable all asset compilation
     Assets / compile := Def.task { () },
     Assets / packageBin := Def.task { () },
+    // Completely disable Web asset processing
+    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value,
+    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
+    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
+    // Disable all Web asset related tasks completely
+    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value,
+    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
+    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
+    // Disable npm and node modules completely
+    Assets / npmNodeModules := Nil,
+    Web-assets / npmNodeModules := Nil,
+    Web-assets-test / npmNodeModules := Nil,
+    // Disable all asset compilation
+    Assets / compile := Def.task { () },
+    Assets / packageBin := Def.task { () },
     testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oD"),
     fork := true,
     connectInput := true,
