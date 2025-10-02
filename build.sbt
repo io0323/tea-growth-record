@@ -58,43 +58,6 @@ lazy val root = (project in file("."))
     libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always,
     libraryDependencySchemes += "org.scala-lang.modules" %% "scala-java8-compat" % VersionScheme.Always,
     PlayKeys.playDefaultPort := 9000,
-    // Completely disable Web assets processing to avoid npm dependency issues
-    Assets / pipelineStages := Nil,
-    pipelineStages := Nil,
-    Assets / jseNpmNodeModules := Nil,
-    Web-assets / jseNpmNodeModules := Nil,
-    Web-assets-test / jseNpmNodeModules := Nil,
-    // Disable all Web asset related tasks
-    Assets / compile := (Assets / compile).dependsOn().value,
-    Assets / packageBin := (Assets / packageBin).dependsOn().value,
-    // Disable JavaScript and CSS processing
-    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
-    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
-    // Additional Web asset disabling
-    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value,
-    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
-    // Disable npm and node modules completely
-    Assets / npmNodeModules := Nil,
-    Web-assets / npmNodeModules := Nil,
-    Web-assets-test / npmNodeModules := Nil,
-    // Disable all asset compilation
-    Assets / compile := Def.task { () },
-    Assets / packageBin := Def.task { () },
-    // Completely disable Web asset processing
-    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value,
-    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
-    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
-    // Disable all Web asset related tasks completely
-    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value,
-    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
-    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
-    // Disable npm and node modules completely
-    Assets / npmNodeModules := Nil,
-    Web-assets / npmNodeModules := Nil,
-    Web-assets-test / npmNodeModules := Nil,
-    // Disable all asset compilation
-    Assets / compile := Def.task { () },
-    Assets / packageBin := Def.task { () },
     testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oD"),
     fork := true,
     connectInput := true,
