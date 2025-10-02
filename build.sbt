@@ -9,7 +9,20 @@ val playVersion = "2.8.0"
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
-  .disablePlugins(play.sbt.PlayWeb)
+  .disablePlugins(
+    play.sbt.PlayWeb,
+    com.typesafe.sbt.web.SbtWeb,
+    com.typesafe.sbt.jse.SbtJsEngine,
+    com.typesafe.sbt.jse.SbtJsTask,
+    com.typesafe.sbt.jse.SbtJs,
+    com.typesafe.sbt.web.SbtWeb,
+    com.typesafe.sbt.digest.SbtDigest,
+    com.typesafe.sbt.rjs.SbtRjs,
+    com.typesafe.sbt.less.SbtLess,
+    com.typesafe.sbt.coffeescript.SbtCoffeeScript,
+    com.typesafe.sbt.jshint.SbtJshint,
+    com.typesafe.sbt.mocha.SbtMocha
+  )
   .settings(
     libraryDependencies ++= Seq(
       guice,

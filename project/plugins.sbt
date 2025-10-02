@@ -1,13 +1,13 @@
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.8.3")
 
-// Web plugins
-addSbtPlugin("com.typesafe.sbt" % "sbt-coffeescript" % "1.0.2")
-addSbtPlugin("com.typesafe.sbt" % "sbt-less" % "1.1.2")
-addSbtPlugin("com.typesafe.sbt" % "sbt-jshint" % "1.0.6")
-addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.10")
-addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.3")
-addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.2")
+// Web plugins - DISABLED to avoid npm dependency issues
+// addSbtPlugin("com.typesafe.sbt" % "sbt-coffeescript" % "1.0.2")
+// addSbtPlugin("com.typesafe.sbt" % "sbt-less" % "1.1.2")
+// addSbtPlugin("com.typesafe.sbt" % "sbt-jshint" % "1.0.6")
+// addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.10")
+// addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.3")
+// addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.2")
 
 // Play enhancer - this automatically generates getters/setters for public fields
 // and rewrites accessors of these fields to use the getters/setters. Remove this

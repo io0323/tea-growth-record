@@ -87,17 +87,17 @@ jobs:
     - name: Clean and update dependencies
       run: |
         # Clean and update dependencies
-        sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil" clean update
+        sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil; set Assets / npmNodeModules := Nil; set Web-assets / npmNodeModules := Nil; set Web-assets-test / npmNodeModules := Nil" clean update
         
         # Verify dependencies - show actual resolved versions
         echo "=== Project dependencies ==="
         sbt "show libraryDependencies" | grep -E "(play-|scala-xml)" || echo "No Play Framework dependencies found"
         
     - name: Compile project
-      run: sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil" compile
+      run: sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil; set Assets / npmNodeModules := Nil; set Web-assets / npmNodeModules := Nil; set Web-assets-test / npmNodeModules := Nil" compile
         
     - name: Run tests
-      run: sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil" test
+      run: sbt "set Assets / jseNpmNodeModules := Nil; set Web-assets / jseNpmNodeModules := Nil; set Web-assets-test / jseNpmNodeModules := Nil; set Assets / npmNodeModules := Nil; set Web-assets / npmNodeModules := Nil; set Web-assets-test / npmNodeModules := Nil" test
       
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
