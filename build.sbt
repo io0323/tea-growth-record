@@ -24,6 +24,24 @@ lazy val root = (project in file("."))
     com.typesafe.sbt.mocha.SbtMocha
   )
   .settings(
+    // Completely disable Web assets processing to avoid npm dependency issues
+    Assets / pipelineStages := Nil,
+    pipelineStages := Nil,
+    Assets / jseNpmNodeModules := Nil,
+    Web-assets / jseNpmNodeModules := Nil,
+    Web-assets-test / jseNpmNodeModules := Nil,
+    Assets / npmNodeModules := Nil,
+    Web-assets / npmNodeModules := Nil,
+    Web-assets-test / npmNodeModules := Nil,
+    // Disable all Web asset related tasks
+    Assets / compile := Def.task { () },
+    Assets / packageBin := Def.task { () },
+    // Disable JavaScript and CSS processing
+    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
+    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
+    Assets / WebKeys.webJarsDirectory := (Assets / WebKeys.webJarsDirectory).dependsOn().value
+  )
+  .settings(
     libraryDependencies ++= Seq(
       guice,
       "com.typesafe.play" %% "play-slick" % "5.2.0",
