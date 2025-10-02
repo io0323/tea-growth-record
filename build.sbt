@@ -9,6 +9,7 @@ val playVersion = "2.8.0"
 
 lazy val root = (project in file("."))
   .enablePlugins(PlayScala)
+  .disablePlugins(play.sbt.PlayWeb)
   .settings(
     libraryDependencies ++= Seq(
       guice,
@@ -44,12 +45,18 @@ lazy val root = (project in file("."))
     libraryDependencySchemes += "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always,
     libraryDependencySchemes += "org.scala-lang.modules" %% "scala-java8-compat" % VersionScheme.Always,
     PlayKeys.playDefaultPort := 9000,
-    Assets / pipelineStages := Seq(digest),
-    pipelineStages := Seq(digest),
-    // Disable Web assets processing to avoid npm dependency issues
+    // Completely disable Web assets processing to avoid npm dependency issues
+    Assets / pipelineStages := Nil,
+    pipelineStages := Nil,
     Assets / jseNpmNodeModules := Nil,
     Web-assets / jseNpmNodeModules := Nil,
     Web-assets-test / jseNpmNodeModules := Nil,
+    // Disable all Web asset related tasks
+    Assets / compile := (Assets / compile).dependsOn().value,
+    Assets / packageBin := (Assets / packageBin).dependsOn().value,
+    // Disable JavaScript and CSS processing
+    Assets / WebKeys.webJarsClassLoader := (Assets / WebKeys.webJarsClassLoader).dependsOn().value,
+    Assets / WebKeys.webJars := (Assets / WebKeys.webJars).dependsOn().value,
     testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oD"),
     fork := true,
     connectInput := true,
